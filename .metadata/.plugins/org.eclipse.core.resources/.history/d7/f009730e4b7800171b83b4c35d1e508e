@@ -1,0 +1,52 @@
+package java_dzien_pierwszy;
+
+public class Operacje_na_zmiennych {
+
+	public static void main(String[] args) {
+		
+		int a = 17;
+		// int b = 4
+		double b = 4; // aby wynik z dzielenia by³ poprawny t¹ zmienn¹ równie¿ musimy zmaienic na double
+		// int  c = a + b
+		double c = a + b; // zamienieamy na bouble poniewa¿ chcemy 
+		
+		System.out.println(c);
+
+		c = a - b;
+		
+		System.out.println(c);
+		
+		c = a*b;
+		
+		System.out.println(c);
+		
+		c = a/b; // poniewa¿ wynik z dzielenia jest liczb¹ zmiennoprzecikow¹ a je¿eli zmienna bêdzie integer wiec wynik z dzielenia nie poka¿e nam to co jest po przecinku tylko zaookr¹gli w dó³
+		
+		System.out.println(c); 
+		
+		a += b;
+		
+		System.out.println(a);
+		
+		a -= b;
+		
+		System.out.println(a);
+		
+		a /= b;
+		
+		System.out.println(a);
+		
+		a *= b;
+		
+		System.out.println(a);
+		
+		System.out.println(a++); // najpierw wyœweitla a pózniej dodaje ale wyniku nie pokazduj
+		System.out.println(++a); // najpierw dodaje i wyœwietli wynik
+		System.out.println(a--); // najpierw wyœwietli a pózniej odejmie ale wyniku odejmowania nie pokaze
+		System.out.println(--a); // najpierw odejmie i pokaze wynik odejmowania
+		
+		
+		
+	}
+
+}

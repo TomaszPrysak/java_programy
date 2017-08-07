@@ -1,0 +1,22 @@
+package java_dzien_drugi;
+
+import java.util.Scanner;
+
+public class Odczyt_danych_Scanner {
+
+	public static void main(String[] args) {
+
+		// Wprowadzanie danych przez u¿ytkownika - klasyczny "input"
+		
+		String imie;
+		
+		Scanner odczyt = new Scanner(System.in);
+		imie = odczyt.nextLine();
+		
+		System.out.println("Witaj " + imie);
+
+		odczyt.close();
+		
+	}
+
+}

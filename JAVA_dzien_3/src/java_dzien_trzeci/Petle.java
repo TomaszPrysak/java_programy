@@ -1,0 +1,80 @@
+package java_dzien_trzeci;
+
+import java.io.FilterInputStream;
+import java.util.Scanner;
+
+public class Petle {
+
+	public static void main(String[] args) {
+		
+		// Pêtla for
+		// Pêtla while
+		// Pêtla for each
+		// wypisuje zadan¹ przez u¿ytkownika okreœlon¹ iloœæ razy s³owo witaj
+		
+		Scanner input = new Scanner(new FilterInputStream(System.in){
+			@Override
+			public void close(){};
+		});
+//				
+//		System.out.println("Wprowadz ile razy chcesz wyœwietliæ witaj:");
+//		
+//		int liczba = input.nextInt();
+//		
+//		int y = 1;
+//		for(int i = 0; i < liczba;  i = i + 1){ // UWAGA!!! w kroku musimy podaæ krok w postaci zapusu arytmetycznego tego co stoi na int i = 0
+//			System.out.println("Wtaj Tomaszu, wypisanie: " + y);
+//			y = y + 1;
+//		}
+//		
+//		input.close();
+//		}
+		
+		System.out.println("Wprowadz ile podasz wyrazów:");
+		
+		int liczba = input.nextInt();
+		
+		Scanner txt = new Scanner(System.in);
+		
+		String[] teksty = new String[liczba]; // UWAGA!!! tworzmy tablicê po to aby nasze wprowadzane teksty umieszczaæ w tablicy
+		
+		// pêtla for
+		
+		for(int i = 0; i < liczba;  i = i + 1){ // UWAGA!!! w kroku musimy podaæ krok w postaci zapusu arytmetycznego tego 
+			System.out.println("Podaj tekst do wyœwietlenia");
+			String tekst = txt.nextLine();
+			teksty[i] = tekst;
+		}
+		
+		txt.close();
+		
+		int i = 0;
+		
+		// pêtla while 
+		
+		while(i < liczba){
+			System.out.println(teksty[i]);
+			i = i + 1;
+		}
+		
+		// pêtla for (each) - pêtla for each jest tak naprawdê pêtl¹ for tylko poprzez to, ¿e jest odpowiednia jej sk³adnia
+		
+		for(String var: teksty){ // przypisujemy lokalnie w pêtli do zmiennej var ka¿dy pojedyñczy element z naszej tablicy od pocz¹tku naszej tablicy, tak jak w Pythonie
+			System.out.println(var);
+		}
+		
+		input.close();
+		
+		// UWAGA!!! tworz¹c jak¹kolwiek tablicê w JAVIE od razu jest ona tworzona z tak¹ iloœci¹ pozycji jak¹ zadeklarowaliœmy, ale je¿eli nic do tablicy nie wpiszemy to: czytaj ni¿ej
+		
+		int[] liczby = new int[3];
+		String [] wyrazy = new String [3];
+		System.out.print(liczby[0]); // w tym wypadku wyœwietli siê 0
+		System.out.print(wyrazy[1]); // w tym wypadku wyœwietli siê null
+		
+	}
+	
+		
+}
+
+

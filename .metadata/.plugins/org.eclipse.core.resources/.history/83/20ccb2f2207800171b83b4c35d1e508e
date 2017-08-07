@@ -1,0 +1,13 @@
+package java_dzien_pierwszy;
+
+public class PierwszyProgram {
+	
+	public float pole1;
+	
+	public static void main(String[] args){
+	
+		System.out.print("Siemandero");
+		
+	}
+
+}

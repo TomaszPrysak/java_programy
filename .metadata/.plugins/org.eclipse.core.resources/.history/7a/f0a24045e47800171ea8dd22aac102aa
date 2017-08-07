@@ -1,0 +1,19 @@
+package java_dzien_drugi;
+
+public class Funkcje_matematyczne {
+
+	public static void main(String[] args) {
+		
+		double y = 9.0;
+		
+		int x = 3;
+		
+		double pierwiastek = Math.sqrt(y);
+		double potega = Math.pow(y, x);
+		
+		System.out.println("Pierwiastek z "+ y + " wynosi: " + pierwiastek);
+		System.out.println(y + " podniesiona do potêgi " + x + " wynosi: " + potega);
+
+	}
+
+}

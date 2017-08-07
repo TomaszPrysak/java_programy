@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;java_dzien_trzeci_cwiczenia.Cwiczenie_Extra&apos; to &apos;Cwiczenie_Kolko_i_krzyzyk&apos;&#x0D;&#x0A;- Original project: &apos;Java_dzien_3_cwiczenia&apos;&#x0D;&#x0A;- Original element: &apos;java_dzien_trzeci_cwiczenia.Cwiczenie_Extra&apos;&#x0D;&#x0A;- Renamed element: &apos;java_dzien_trzeci_cwiczenia.Cwiczenie_Kolko_i_krzyzyk&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Cwiczenie_Extra&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;java_dzien_trzeci_cwiczenia{Cwiczenie_Extra.java[Cwiczenie_Extra" matchStrategy="1" name="Cwiczenie_Kolko_i_krzyzyk" qualified="false" references="true" similarDeclarations="false" stamp="1502106721254" textual="false" version="1.0"/>
+</session>

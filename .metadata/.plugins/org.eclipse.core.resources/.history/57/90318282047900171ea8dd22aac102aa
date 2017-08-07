@@ -1,0 +1,32 @@
+package java_dzien_drugi_cwiczenia;
+
+import java.io.FilterInputStream;
+import java.util.Scanner;
+
+public class Cwiczenie_J21 {
+
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(new FilterInputStream(System.in){
+			@Override
+			public void close(){};
+		});
+		
+		System.out.println("Program porównuj¹cy dwie podane liczby");
+		System.out.println("Podaj liczbê a: ");
+		
+		double a = input.nextDouble();
+		
+		System.out.println("Podaj liczbê b: ");
+		double b = input.nextDouble();
+		
+		input.close();
+		
+		System.out.println("Czy liczba a jest wiêksza od b: " + (a > b));
+		System.out.println("Czy liczba a jest mniejsza od b: " + (b < a));
+		System.out.println("Czy liczba a jest równa b: " + (a == b));
+		System.out.println("Czy liczba a jest ró¿na od b: " + (a != b));
+
+	}
+
+}

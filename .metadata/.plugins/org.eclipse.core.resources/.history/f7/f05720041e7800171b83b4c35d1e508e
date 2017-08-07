@@ -1,0 +1,7 @@
+package java_dzien_pierwszy;
+
+public class PierwszyProgram {
+
+	public float pole1;
+	
+}

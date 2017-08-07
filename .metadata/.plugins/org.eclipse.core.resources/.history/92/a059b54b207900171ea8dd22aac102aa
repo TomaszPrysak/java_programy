@@ -1,0 +1,17 @@
+package java_dzien_drugi_cwiczenia;
+
+public class Cwiczenie_J27 {
+
+	public static void main(String[] args) {
+		
+		float x = 0.8f;
+		
+		if (x>0){
+			if(x<1){
+				System.out.println("Liczba " + x + " zawiera siê w przedziale <0,1>");
+			}
+		}
+
+	}
+
+}

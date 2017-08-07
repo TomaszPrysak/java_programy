@@ -1,0 +1,15 @@
+package java_dzien_pierwszy;
+
+public class Zmienna_stala {
+
+	public static void main(String[] args) {
+		
+		final int STALA_INT = 8; // deklarowanie i inicjalizowanie zmiennej z jednoczesnym s³ówkiem final powoduje, ¿e nie mo¿emy pozniej zmienic jej wartosci 
+		STALA_INT = 9; // wyskoczy b³¹d bo nie mozemy zmienic stalej
+		
+		final int STALA_FLOAT; // je¿eli najpierw zdeklarujemy typ zmiennej z jednoczesnym okreœleniem ¿e jest sta³a
+		STALA_FLOAT = 8; // a dopiero pózniej zainicjujemy wartoœæ do zmiennej to nie wyskoczy b³¹d w przypadku zmiany sta³ej bo inicjalizacja jest przeprowadzana po deklaracji
+
+	}
+
+}

@@ -1,0 +1,16 @@
+package java_dzien_pierwszy;
+
+public class Zmienna_string {
+
+	public static void main(String[] args) {
+		
+		String hello = "Witaj";
+		String world = "Œwiecie";
+		
+		String powitanie = hello + world;
+		
+		
+
+	}
+
+}

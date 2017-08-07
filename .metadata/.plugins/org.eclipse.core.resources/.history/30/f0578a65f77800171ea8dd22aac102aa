@@ -1,0 +1,39 @@
+package java_dzien_drugi;
+
+import java.io.FilterInputStream;
+import java.util.Scanner;
+
+public class Odczyt_danych_Scanner {
+
+	public static void main(String[] args) {
+
+		// Wprowadzanie danych przez u¿ytkownika - klasyczny "input"
+		
+		String imie;
+		
+		System.out.println("Wprowadz swoje imiê:");
+		
+//		Scanner odczyt = new Scanner(new FilterInputStream(System.in){
+//			@Override
+//			public void close(){};
+//		});
+		
+		Scanner odczyt = new Scanner(System.in);
+		
+		imie = odczyt.nextLine();
+		
+		System.out.println("Witaj " + imie);
+
+		odczyt.close();
+		
+		Scanner odczyt2 = new Scanner(System.in);
+		
+		String imie2 = odczyt.nextLine();
+		
+		System.out.println("Witaj " + imie2);
+		
+		odczyt.close();
+		
+	}
+
+}

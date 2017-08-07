@@ -1,0 +1,43 @@
+package java_dzien_drugi_cwiczenia;
+
+import java.math.BigDecimal;
+import java.math.BigInteger;
+
+public class Cwiczenie_J17 {
+
+	public static void main(String[] args) {
+		
+		// Deklarowanie zmiennych typu Big Integer - sta³oprzecinkowych
+		
+		BigInteger bigIntX = new BigInteger("4587861185611654");
+		BigInteger bigIntY = new BigInteger("156560323116549156546546");
+		
+		// Dzia³ania na zmiennych typu Big Integer
+		
+		BigInteger bigIntSuma = bigIntX.add(bigIntY);
+		BigInteger bigIntRoznica = bigIntY.subtract(bigIntX);
+		BigInteger bigIntMnozenie = bigIntX.multiply(bigIntY);
+		BigInteger bigIntDzielenie = bigIntX.divide(bigIntY);
+		
+		System.out.println("Dodawanie du¿ych liczb: " + bigIntSuma.toString());
+		System.out.println("Odejmowanie du¿ych liczb: " + bigIntRoznica.toString());
+		System.out.println("Mno¿enie du¿ych liczb: " + bigIntMnozenie.toString());
+		System.out.println("Dzielenie du¿ych liczb: " + bigIntDzielenie.toString()); // wyœwietli³o zero bo dzielimy mniejsz¹ przez wiêksz¹ i na dodatek zdeklarowaliœmy t¹ zmienn¹ jako integer a nie zmiennoprzecinkow¹ 
+		
+		// Deklarowanie zmiennych typu Big Decimal - zmiennoprzecinkowych
+		
+		BigDecimal bigDecX = new BigDecimal("4587861185611654");
+		BigDecimal bigDecY = new BigDecimal("156560323116549156546546");
+		BigDecimal bigDecZ = new BigDecimal("2");
+		
+		BigDecimal bigDecDzielenie = bigDecX.divide(bigDecY);
+		
+		BigDecimal bigDecMnozenie = bigDecDzielenie.multiply(bigDecZ);
+		
+		// System.out.println("Dzielenie du¿ych liczb zmiennoprzecinkowych: " + bigDecDzielenie.toString()); // tutaj zawróci b³¹d bo jest du¿a reprezentacja licz w okresie
+		
+		System.out.println(bigDecMnozenie);
+
+	}
+
+}

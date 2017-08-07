@@ -1,0 +1,26 @@
+package java_dzien_pierwszy_cwiczenia;
+
+public class Cwiczenie_J8_J9 {
+
+	public static void main(String[] args) {
+		
+		String pierwszy = "Wpad³a bomba do piwnicy ";
+		String drugi = "napisa³a na tablicy";
+		String trzeci = pierwszy + drugi;
+		
+		String czwarty = trzeci + " raz dwa trzy, idziesz ty!!!";
+		
+		StringBuffer piaty = new StringBuffer(trzeci);
+		piaty.append(" buahahaha");
+		
+		System.out.println(trzeci.toUpperCase());
+		System.out.println(czwarty.toLowerCase());
+		System.out.println(piaty.toString().toLowerCase());
+		
+		System.out.println(czwarty.length()); // zwraca d³ugoœæ ci¹gu znaków z naszej zmiennej
+		
+		System.out.println((trzeci.charAt(2)) + (trzeci.charAt(5)));
+		
+	}
+
+}

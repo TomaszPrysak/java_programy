@@ -1,0 +1,29 @@
+package java_dzien_pierwszy_cwiczenia;
+
+public class Cwiczenie_J8_J9 {
+
+	public static void main(String[] args) {
+		
+		String pierwszy = "Wpad³a bomba do piwnicy ";
+		String drugi = "napisa³a na tablicy";
+		String trzeci = pierwszy + drugi;
+		
+		String czwarty = trzeci + " raz dwa trzy, idziesz ty!!!";
+		
+		StringBuffer piaty = new StringBuffer(trzeci);
+		piaty.append(" buahahaha");
+		
+		System.out.println(trzeci.toUpperCase());
+		System.out.println(czwarty.toLowerCase());
+		System.out.println(piaty.toString().toLowerCase());
+		
+		System.out.println(czwarty.length()); // zwraca d³ugoœæ ci¹gu znaków z naszej zmiennej
+		
+		System.out.println(trzeci.charAt(2)); // wypisuje znak z drugiego indeksu zmiennej trzeci
+		System.out.println(trzeci.charAt(5)); // wypisuje znak z pi¹tek indeksu zmiennej trzeci
+		
+		System.out.println(czwarty.charAt((czwarty.length()-3))); // wypisuje znak 3 od koñca ze zmiennej czwarty, tutaj musimy najpierw u¿yæ po kropce polecenia length na zmiennej czwarty która zwróci nam iloœæ znaków w tej zmiennej i nastêpnie odejmujemy 3 ¿eby otrzymaæ znak na pozycji 3 od koñca
+		
+	}
+
+}

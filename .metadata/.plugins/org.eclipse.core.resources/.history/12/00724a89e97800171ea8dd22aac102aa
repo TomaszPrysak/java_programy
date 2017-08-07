@@ -1,0 +1,24 @@
+package java_dzien_drugi;
+
+import java.math.BigInteger;
+
+public class Wielkie_liczby {
+
+	public static void main(String[] args) {
+		
+		// UWAGA!!! nale¿y pamiêtaæ, ¿e na wielkich liczbach nie stosujemy zwyk³ych operacji matematycznych jak plus(+), minus(-) itd tylko specjalne polecenia
+		
+		long x = 25615612151111665l; // UWAGA! pamiêtaæ, ¿e przy niektórych typach zmiennych musimy dodawaæ na koñcu liczby pierwsz¹ literkê od nazwy typu zmiennej
+		long y = 25615612151111665l;
+		
+		BigInteger bigIntX = BigInteger.valueOf(x); // jest to metoda statyczna która konwertuje nasz¹ liczbê na liczbê Wielk¹ po to aby pózniej mozna bylo robic jakies opercje na wielkich liczbach
+		System.out.println(bigIntX);
+		
+		BigInteger bigIntY = BigInteger.valueOf(y);
+		System.out.println(bigIntY);
+		
+		BigInteger bigIntZ = bigIntY.add(bigIntX);
+
+	}
+
+}

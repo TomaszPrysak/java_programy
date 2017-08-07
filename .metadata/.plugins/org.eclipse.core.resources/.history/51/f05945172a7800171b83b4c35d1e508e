@@ -1,0 +1,19 @@
+package java_dzien_pierwszy_cwiczenia;
+
+public class Cwiczenie_J6 {
+
+	public static void main(String[] args) {
+		
+		int wiek = 25;
+		char imie = 'J';
+		char nazwisko = 'K';
+		boolean prawda = true;
+		
+		System.out.println("Czeœæ Jan, s³ysza³em ¿e masz " + wiek + " lat i uczysz siê programowania, czy to prawda ?");
+		System.out.println(prawda);
+		System.out.println("Czy Twoje inicja³y to " + imie + nazwisko + " ?");
+		System.out.println("Tak, " + prawda);
+		
+	}
+
+}

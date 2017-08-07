@@ -1,0 +1,21 @@
+package java_dzien_pierwszy_cwiczenia;
+
+import java.util.Random;
+
+public class Cwiczenie_J16 {
+
+	public static void main(String[] args) {
+		
+		Random gen = new Random();
+		int x = gen.nextInt(10);
+		int y = gen.nextInt(10);
+		
+		System.out.println("Liczba x: " + x + " Liczba y: " + y);
+		System.out.println("Czy x > y: " + (x>y));
+		System.out.println("Czy (x*2) > y: " + ((x*2)>y));
+		System.out.println("Czy y < (x+3) i y > (x-2): " + ((y<(x+3))&&(y>(x-2))));
+		System.out.println("Czy x*y jest przysty: " + ((x%y)==0));
+
+	}
+
+}

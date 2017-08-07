@@ -1,0 +1,15 @@
+package java_dzien_pierwszy_cwiczenia;
+
+public class Cwiczenie_J7 {
+
+	public static void main(String[] args) {
+
+		final int pierwsza = 5;
+		final double druga = 1.5;
+		final char znak = 'A';
+		
+		pierwsza = 4;
+
+	}
+
+}

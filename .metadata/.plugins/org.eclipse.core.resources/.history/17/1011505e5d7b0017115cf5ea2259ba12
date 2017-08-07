@@ -1,0 +1,33 @@
+package java_dzien_trzeci_cwiczenia;
+
+import java.io.FilterInputStream;
+import java.util.Scanner;
+
+public class Cwiczenie_J31 {
+
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(new FilterInputStream(System.in){ // deklarujemy obekt typu scanner o nazwie odczyt i inicjalizujemy go 
+			@Override
+			public void close(){};
+		});
+		
+		System.out.println("Podaj pierwszy wyraz:");
+		
+		String wyraz1 = input.nextLine();
+		
+		System.out.println("Podaj drugi wyraz:");
+		
+		String wyraz2 = input.nextLine();
+		
+		char A = wyraz2.charAt(wyraz2.length() - 3);
+		
+		String separator = String.valueOf(A);
+		
+		for (String res: wyraz1.split(separator)){
+			System.out.print(res);
+		}
+
+	}
+
+}

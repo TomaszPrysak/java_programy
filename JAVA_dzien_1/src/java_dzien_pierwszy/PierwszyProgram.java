@@ -1,0 +1,19 @@
+package java_dzien_pierwszy;
+
+public class PierwszyProgram {
+	
+	public float pole1;
+	
+	public static void main(String[] args){
+	
+		System.out.println("Siemano na kursie"); // println - wyœwietla z dodaniem nowej lini i ka¿de nastêpne dzia³anie bêdziê od nowej linii
+		
+		System.out.print("Siemano na kursie \n"); // dodanie w stringu "\n" powoduje równie¿ dodanie nowej lini i ka¿de nastêpne dzia³anei bêdzie od nowej linii
+		
+		System.out.print("pisane z nowej lini"); 
+		
+		System.out.print(System.getProperty("java.runtime.version")); // pisane jest razem z wierszem powy¿ej, poniewa¿ ten wiersz powy¿ej nie jest poleceniem z przejœciem do nowej linii
+		
+	}
+
+}

@@ -1,0 +1,19 @@
+package java_dzien_drugi;
+
+import java.math.BigInteger;
+
+public class Wielkie_liczby {
+
+	public static void main(String[] args) {
+		
+		long x = 25615612151111665l; // UWAGA! pamiêtaæ, ¿e przy niektórych typach zmiennych musimy dodawaæ na koñcu liczby pierwsz¹ literkê od nazwy typu zmiennej
+		long y = 25615612151111665l;
+		
+		BigInteger bigIntX = BigInteger.valueOf(x);
+		BigInteger bigIntY = BigInteger.valueOf(y);
+		
+		bigIntY.add(bigIntX);
+
+	}
+
+}

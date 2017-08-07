@@ -1,0 +1,33 @@
+package java_dzien_trzeci_cwiczenia;
+
+import java.io.FilterInputStream;
+import java.util.Scanner;
+
+public class Cwiczenie_J40 {
+
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(new FilterInputStream(System.in){ // deklarujemy obekt typu scanner o nazwie odczyt i inicjalizujemy go 
+			@Override
+			public void close(){};
+		});
+		
+		System.out.println("Podaj wysokoœæ choinki (liczba ca³kowita dodatnia):");
+		int h = input.nextInt();
+		
+		while(h<0){
+			System.out.println("Podana liczba jest mniejsza od 0:");
+			System.out.println("Podaj liczbê ca³kowit¹ dodatni¹:");
+			h = input.nextInt();
+		}
+	
+		for (int i = 0; i < h; i++){
+			for(int j = h; j > h-2*i+1; j++){
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+		
+		
+	}
+}

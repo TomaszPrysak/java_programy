@@ -1,0 +1,21 @@
+package java_dzien_drugi;
+
+public class Funkcje_matematyczne {
+
+	public static void main(String[] args) {
+		
+		// wykorzystanie funkcji matematycznych
+		
+		double y = 9.0;
+		
+		int x = 3;
+		
+		double pierwiastek = Math.sqrt(y); // wywo³anie fukcji matematycznych nastepuje poprzez s³owo Math i po kropce nazwa funkcji jak¹ cgcemy wykorzystaæ
+		double potega = Math.pow(y, x);
+		
+		System.out.println("Pierwiastek kwadratowy z "+ y + " wynosi: " + pierwiastek);
+		System.out.println(y + " podniesiona do potêgi " + x + " wynosi: " + potega);
+
+	}
+
+}
