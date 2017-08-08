@@ -1,0 +1,20 @@
+package java_dzien_czwarty_cwiczenia;
+
+public class Cwiczenie_J48 {
+
+	public static void main(String[] args) {
+		
+		int [][] tM = new int [10][10]; // tM - tabliczka mno¿enia
+		
+		for (int i = 1; i <= tM.length - 1; i++){
+			for (int j = 1; j < 9; j++){
+				tM[i][j] = i*j;
+				System.out.print("\t" + tM[i][j]);
+			}
+			System.out.println("");
+		}
+		
+
+	}
+
+}

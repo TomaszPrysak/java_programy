@@ -1,0 +1,19 @@
+package java_dzien_czwarty_cwiczenia;
+
+public class Cwiczenie_J47 {
+
+	public static void main(String[] args) {
+		
+		int[][] mJ = new int [3][3]; // mJ1 = macierz jednostkowa pierwsza
+//		int[][] mJ2 = new int [3][3]; // mJ2 = macierz jednostkowa druga // nie potrzebna nam druga macierz bo mo¿emy dodaæ pierwsz¹ macierz do samej siebie
+		int[][] mS = new int [3][3];
+		
+		for (int i = 0; i <= mJ.length - 1; i++){
+			for (int j = 0; j <= mJ[i].length; j++){
+				
+			}
+		}
+
+	}
+
+}

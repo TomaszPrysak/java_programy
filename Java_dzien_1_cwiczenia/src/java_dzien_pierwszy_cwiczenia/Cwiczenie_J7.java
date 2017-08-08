@@ -13,7 +13,7 @@ public class Cwiczenie_J7 {
 		// pierwsza = druga; // nie mo¿emy zmieniæ sta³ej
 		// znak = 'c'; // nie mo¿emy zmieniæ sta³ej
 		
-		final float pi = 3.14f; // deklaracja i inicjowanie sta³ej //NIE WIEM DLACZEGO B£¥D
+		final float pi = 3.14f; // deklaracja i inicjowanie sta³ej
 		final int x = 0; // deklaracja i inicjowanie sta³ej
 		float g = 0.1f; // inicjowanie zmiennej g o typie danych float
 		boolean ToBeOrNotToBe = true;

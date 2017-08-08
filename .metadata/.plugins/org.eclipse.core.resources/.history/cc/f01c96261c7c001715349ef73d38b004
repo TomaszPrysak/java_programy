@@ -1,0 +1,35 @@
+package java_dzien_czwarty_cwiczenia;
+
+import java.util.Random;
+
+public class Cwiczenie_J44 {
+
+	public static void main(String[] args) {
+		
+		int [] tab = new int [20];
+		
+		Random gen = new Random();
+
+		// losowanie licz od 1 do 10
+		
+		for (int i = 0; i < tab.length; i++){
+			int x = gen.nextInt(10) + 1;
+			tab[i] = x;
+		}
+		
+		// wypisywanie na ekranie
+		
+		for (int i: tab){
+			System.out.print(tab[i]);
+			System.out.print(" ");
+		}
+		
+		int ilosc = 0;
+		
+		for (int i = 0; i <= tab.length - 1; i++){
+			
+		}
+		
+	}
+
+}

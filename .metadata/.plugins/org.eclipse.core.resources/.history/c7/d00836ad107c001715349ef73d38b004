@@ -1,0 +1,81 @@
+package java_dzien_czwarty;
+
+public class Tablice {
+
+	public static void main(String[] args) {
+		
+		// tablice wielowymiarowe
+		
+		int[][] tab = new int[3][3]; // ten zapis oznacza, ¿e deklarujemy tablicê trzy wiersze i trzy kolumny, dwuwymiarowa
+		
+		tab[0][0] = 1;
+		tab[0][1] = 2;
+
+		// tablica wielowymiarowa kwadratowa z inicjalizacj¹ wartoœci w niej
+		
+		int[][] tab2 = { {1,2,3}, {4,5,6}, {7,8,9} }; // deklaracje w taki sposób powoduje, ¿e w tej tablicy s¹ trzy wiersze: w pierwszym wierszu: 1,2,3, w drugim: 4,5,6, w trzecim: 7,8,9
+		
+		System.out.println(tab2[0][1]);
+		
+		// tablica ta wygl¹da nastêpuj¹co:
+		// plasterek       0		
+		// kolumna      0  I  II
+		// wiersz    0  1  2  3
+		// wiersz    I	4  5  6
+		// wiersz   II	7  8  9
+		
+		// w zwi¹zku z powy¿szym polecenie wypisz System.out.println(tab2[0][1]); [wiersz][kolumna][plasterek] - w powy¿szym plasterek jest tylko jeden wiec  nie u¿ywamy
+		// otrzymamy wynik: 2
+		
+		// czyli najpierw podajemy z którego wiersza wypisujemy a nastepnie z której kolumny
+		
+		// aby wypisaæ powy¿sz¹ tablicê u¿ywamy pêtli for
+		
+		for (int i = 0; i <= tab2.length - 1; i++){
+			for(int j = 0; j <= tab2.length - 1; j++){
+				System.out.print(tab2[i][j]);
+			}
+			System.out.println();
+		}
+		
+		System.out.println(tab2[0][0]);
+		System.out.println(tab2[0][1]);
+		System.out.println(tab2[1][0]);
+		
+		// tablica 3D
+		
+		String [][][] tab3 = { { {"A1", "A2"}, {"A3", "A4"} }, { {"B1", "B2"}, {"B3", "B4"}} }; // tablica ta sk³ada siê z
+		
+		System.out.println(tab3[1][0][1]);
+		
+		// tablica prostok¹tna, ró¿na iloœæ wierszy i kolumn
+		
+		int[][] tab4 = { {1,2,3,5,6}, {4,5,6,5,6}, {7,8,9,5,6} };
+		
+		for (int i = 0; i <= tab4.length - 1; i++){
+			for(int j = 0; j <= tab4[1].length - 1; j++){
+				System.out.print(tab4[i][j]);
+			}
+			System.out.println();
+		}
+		
+		System.out.println(tab4.length); // d³ugoœæ pierwszego wymiaru
+		System.out.println(tab4[1].length); // d³ugoœæ drugiego wymiaru
+		
+		// Tablice Stringów
+		//----------------------------------------------
+		
+		String[] firstNames = {"Karol", "Basia", "Kasia"};
+		String[] lastNames = {"Kowalski", "Nowakowska", "Wadecka"};
+		String[][] firstLast = {firstNames, lastNames};
+		
+		for (int i = 0; i <= firstNames.length - 1; i++){
+			for (int j = 0; i <= lastNames.length - 1; j++){
+				System.out.print(firstLast[i][j]);
+			}
+			System.out.println("");
+		}
+		
+	}
+
+}

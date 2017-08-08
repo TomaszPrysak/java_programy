@@ -18,7 +18,7 @@ public class Wielkie_liczby {
 		BigInteger bigIntY = BigInteger.valueOf(y); // tak jak powy¿sza liczba bigIntX ta te¿ powsta³a poprzez konwersjê liczby typu long na Big
 		System.out.println(bigIntY.toString());
 		
-		// je¿eli chcemy 
+
 		
 		BigInteger bigbigInt = new BigInteger("1651115154155455415189971616"); // tutaj tworzymy du¿¹ liczbê od razu nie poprzez konwersjê. Przydatne je¿eli od razu wiemy ze liczba bêdzie Big a nie tylko wynik jej dodawania
 		

@@ -1,0 +1,30 @@
+package java_dzien_czwarty_cwiczenia;
+
+import java.io.FilterInputStream;
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Cwiczenie_J49 {
+
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(new FilterInputStream(System.in){ // deklarujemy obekt typu scanner o nazwie odczyt i inicjalizujemy go 
+			@Override
+			public void close(){};
+		});
+		
+		String znaki = "";
+		
+		ArrayList<String> lista = new ArrayList<String>();
+		
+		while (!znaki.equals("end")){
+			System.out.println("Podaj napis:");
+			znaki = input.nextLine();
+			lista.add(znaki);
+		}
+		
+		System.out.println(lista);
+
+	}
+
+}

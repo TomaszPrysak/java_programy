@@ -8,7 +8,7 @@ public class Lokalizacja_Local {
 
 	public static void main(String[] args) {
 		
-		// UWAGA !!! poniewa¿ w zale¿noœci od tego na jakim systemie pracuje, tzn. na jakiej lokalizacji polskiej, angielskie, us to system ró¿nie przyjmuje co jest rozdzielnikiem w liczbach zmiennoprzecinkowych
+		// UWAGA !!! poniewa¿ w zale¿noœci od tego na jakim systemie pracujemy, tzn. na jakiej lokalizacji polskiej, angielskiej, us to system ró¿nie przyjmuje co jest rozdzielnikiem w liczbach zmiennoprzecinkowych
 		
 		Scanner input = new Scanner(new FilterInputStream(System.in){
 			@Override

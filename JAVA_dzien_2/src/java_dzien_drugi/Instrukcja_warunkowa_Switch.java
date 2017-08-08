@@ -6,7 +6,7 @@ public class Instrukcja_warunkowa_Switch {
 
 		// Instrukcja warunkowa SWITCH
 		
-		String ok = "2"; // deklarujemy zmienn¹ string i inicjalizacj¹ jej przez napis "1"
+		String ok = "2"; // deklarujemy zmienn¹ string i inicjalizacj¹ jej przez napis "2"
 		
 		switch(ok){ // sprawdzenie warunków dla naszej zmiennej,
 		

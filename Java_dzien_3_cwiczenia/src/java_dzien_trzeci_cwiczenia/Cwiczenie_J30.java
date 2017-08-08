@@ -22,7 +22,7 @@ public class Cwiczenie_J30 {
 		}
 		
 		//po spe³nieniu warunku 
-		for (int i = 1; i <=x; i = i + 2){
+		for (int i = 1; i <= x; i = i + 2){
 			System.out.println(i);
 		}
 		

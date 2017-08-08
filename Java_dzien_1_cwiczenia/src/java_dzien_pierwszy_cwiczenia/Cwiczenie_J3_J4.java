@@ -5,7 +5,7 @@ public class Cwiczenie_J3_J4 {
 	public static void main(String[] args) {
 		/*
 		Program zwraca w oknie wynikowym ci¹g znaków zawarty w poleceniach:
-			-System.out.print S
+			-System.out.print
 			-System.out.println
 		Polecenie print - wyœwietla ci¹gi znaków i pozostaje w tej samej lini. Nastêpne polecenie print wyœwietli ci¹g znaków zaraz za poprzedzaj¹cym wynikiem
 		Polecenie println - wyœwietla ci¹g znaków i przenosi siê do nowej lini. Nastêpe polecenie print(ln) bêdzie wykonywane w nowej lini

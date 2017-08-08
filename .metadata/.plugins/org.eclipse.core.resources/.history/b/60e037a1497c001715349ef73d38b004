@@ -1,0 +1,114 @@
+package java_dzien_czwarty_cwiczenia;
+
+import java.io.FilterInputStream;
+import java.util.ArrayDeque;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Scanner;
+
+public class Cwiczenie_J50_J51 {
+
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(new FilterInputStream(System.in){ // deklarujemy obekt typu scanner o nazwie odczyt i inicjalizujemy go 
+			@Override
+			public void close(){};
+		});
+		
+		HashMap<String,Integer> sklep = new HashMap<String,Integer>();
+		
+		ArrayList<String> koszyk = new ArrayList<String>();
+		
+		sklep.put("buty", 150);
+		sklep.put("spodnie", 200);
+		sklep.put("czapka", 70);
+		sklep.put("koszula", 180);
+		sklep.put("kurtka", 250);
+		
+		System.out.println("Podaj produkt spoœród dostêpnych " + sklep.keySet() + " (koniec - wyjscie i rachunek:");
+		String produkt = input.nextLine();
+		
+		int rachunek = 0;
+		
+		// pierwszy sposób
+		
+//		while (!produkt.equals("koniec")){
+//			if (produkt.equals("buty")){
+//				rachunek = rachunek + sklep.get(produkt);
+//			}
+//			else if (produkt.equals("spodnie")){
+//				rachunek = rachunek + sklep.get(produkt);
+//			}
+//			else if (produkt.equals("czapka")){
+//				rachunek = rachunek + sklep.get(produkt);
+//			}
+//			else if (produkt.equals("koszula")){
+//				rachunek = rachunek + sklep.get(produkt);
+//			}
+//			else if (produkt.equals("kurtka")){
+//				rachunek = rachunek + sklep.get(produkt);
+//			}
+//			else{
+//				System.out.println("Podanego produktu nie ma w magazynie");
+//			}
+//			
+//			System.out.println("Podaj nastêpny produkt:");
+//			produkt = input.nextLine();
+//		}
+//		
+//		System.out.println("Do zap³aty: " + rachunek);
+//		
+//		input.close();
+		
+		// drugi sposób
+		
+//		while (!produkt.equals("koniec")){
+//			if (sklep.containsKey(produkt)){
+//				rachunek = rachunek + sklep.get(produkt);
+//			}
+//			else{
+//				System.out.println("Podanego produktu nie ma w magazynie");
+//			}
+//			
+//			System.out.println("Podaj nastêpny produkt:");
+//			produkt = input.nextLine();
+//		}
+//		
+//		System.out.println("Do zap³aty: " + rachunek);
+//		
+//		input.close();
+		
+		
+		while (!produkt.equals("koniec")){
+			if (!koszyk.contains(produkt)){
+				if (sklep.containsKey(produkt)){
+					rachunek = rachunek + sklep.get(produkt);
+					koszyk.add(produkt);
+				}
+				else{
+					System.out.println("Podanego produktu nie ma w magazynie");
+				}
+				}
+			else{
+				System.out.println("W koszytku juz siê znajduje taki sam produkt. Czy chcesz dodaæ drug¹ sztukê (T)ak, (N)ie");
+				String decyzja = "";
+				decyzja = input.nextLine();
+				switch(decyzja){
+				case "T":
+					rachunek = rachunek + sklep.get(produkt);
+					koszyk.add(produkt);
+				case "N":
+				}
+			}
+			System.out.println("Podaj nastêpny produkt:");
+			produkt = input.nextLine();
+		}
+		
+		System.out.println("Do zap³aty: " + rachunek);
+		
+		
+		input.close();
+
+	}
+
+}

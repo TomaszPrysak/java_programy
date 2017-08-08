@@ -1,0 +1,28 @@
+package java_dzien_czwarty_cwiczenia;
+
+import java.util.Random;
+
+public class Cwiczenie_J43 {
+
+	public static void main(String[] args) {
+		
+		int [] tab = new int [10];
+		
+		Random gen = new Random();
+		
+		for (int i = 0; i < 10; i++){
+			int x = gen.nextInt(21) - 10;
+			tab[i] = x;
+			System.out.println(tab[i]);
+		}
+		
+		int x = tab[0];
+		
+		for (int j = 0; j < 10; j++){
+			if (x > tab[j] + 1){
+			}
+		}
+		
+	}
+
+}

@@ -10,7 +10,7 @@ public class Operacje_na_zmiennych {
 		// int b = 4
 		double b = 4; // aby wynik z dzielenia by³ poprawny t¹ zmienn¹ równie¿ musimy zmaienic na double
 		// int  c = a + b
-		double c = a + b; // zamienieamy na bouble poniewa¿ chcemy 
+		double c = a + b; // zamienieamy na double poniewa¿ chcemy 
 		
 		System.out.println(c);
 
@@ -46,9 +46,9 @@ public class Operacje_na_zmiennych {
 		
 		// Inkrementacje i dekrementacje
 		
-		System.out.println(a++); // najpierw wyœweitla a pózniej dodaje ale wyniku nie pokazduj
-		System.out.println(++a); // najpierw dodaje i wyœwietli wynik
-		System.out.println(a--); // najpierw wyœwietli a pózniej odejmie ale wyniku odejmowania nie pokaze
+		System.out.println(a++); // najpierw wyœweitla a pózniej dodaje ale wyniku nie wyœwietli
+		System.out.println(++a); // najpierw dodaje i nastêpnie wyœwietli wynik
+		System.out.println(a--); // najpierw wyœwietli a pózniej odejmie ale wyniku odejmowania nie wyœwietli
 		System.out.println(--a); // najpierw odejmie i pokaze wynik odejmowania
 		
 		// Operacje porównania
@@ -70,7 +70,7 @@ public class Operacje_na_zmiennych {
 		
 		
 		
-			// Operator trój argumentowy
+			// Operator trójargumentowy
 		
 		int wynik  = x<y?x:y; // je¿eli porównanie daje wynik true to zwracawartoœæ która powoduje ¿e jest true, czyli 5 jest mniejsze od 10 to wynikuem bêdzie 5
 		System.out.println(wynik);

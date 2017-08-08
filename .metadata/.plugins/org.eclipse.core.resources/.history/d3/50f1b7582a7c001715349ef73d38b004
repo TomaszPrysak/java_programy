@@ -1,0 +1,13 @@
+package java_dzien_czwarty_cwiczenia;
+
+public class Cwiczenie_J48 {
+
+	public static void main(String[] args) {
+		
+		int [][] tabliczkaMnozenia = new int [10][10];
+		
+		
+
+	}
+
+}

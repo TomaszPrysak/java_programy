@@ -1,0 +1,21 @@
+package java_dzien_czwarty_cwiczenia;
+
+import java.util.Random;
+
+public class Cwiczenie_J44 {
+
+	public static void main(String[] args) {
+		
+		int [] tab = new int [20];
+		
+		Random gen = new Random();
+
+		for (int i = 0; i < tab.length; i++){
+			int x = gen.nextInt(9) +1;
+			tab[i] = x;
+		}
+		
+		
+	}
+
+}

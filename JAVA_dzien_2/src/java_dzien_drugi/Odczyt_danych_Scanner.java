@@ -15,7 +15,7 @@ public class Odczyt_danych_Scanner {
 		
 		System.out.println("Wprowadz swoje imiê:");
 		
-		// Poni¿sza konstrukcja jest wymagana poniwa¿ po kazdym uzyciu Scannera musimy zamkn¹æ obietk i je¿eli bêdziemy chcieli znowu u¿yæ polecenia Scanner to nam wyœwietli b³¹d 
+		// Poni¿sza konstrukcja jest wymagana poniwa¿ po kazdym uzyciu Scannera musimy zamkn¹æ obiekt i je¿eli bêdziemy chcieli znowu u¿yæ polecenia Scanner to nam wyœwietli b³¹d 
 		
 		Scanner odczyt = new Scanner(new FilterInputStream(System.in){ // deklarujemy obekt typu scanner o nazwie odczyt i inicjalizujemy go 
 			@Override

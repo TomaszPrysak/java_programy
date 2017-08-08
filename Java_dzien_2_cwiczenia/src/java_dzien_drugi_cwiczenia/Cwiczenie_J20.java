@@ -14,7 +14,7 @@ public class Cwiczenie_J20 {
 			public void close(){};
 		});
 		
-		// poniwa¿ nie narzuciliœmy lokalizacji z jakiego systemu ma korzystaæ klasa to bêdzie korzystac z systemu 
+		// poniwa¿ nie narzuciliœmy lokalizacji z jakiego systemu ma korzystaæ klasa to bêdzie korzystac z systemu z przecinkkiem
 
 		System.out.println("Program do obliczania œredniej z trzech liczb");
 		System.out.println("Wprowadz pierwsz¹ liczbê: ");
