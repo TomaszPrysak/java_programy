@@ -1,0 +1,12 @@
+package cwiczenie_J52;
+
+public class Company {
+
+	public static void main(String[] args) {
+		
+		Employee tomek = new Employee("Ferdynand", "Kiepski", "1965", 0);
+		
+
+	}
+
+}

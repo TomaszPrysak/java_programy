@@ -1,0 +1,22 @@
+package cwiczenie_J53;
+
+public class Produkty {
+		
+		// Pola klasy
+		String produkt;
+		double cena;
+		
+		// Konstruktor klasy
+		Produkty(String produkty, double cena){
+			this.produkt = produkt;
+			this.cena = cena;
+		}
+		
+		// Metoda klasy
+		public String info(){
+			return "Produkt: " + produkt + " , cena: " + cena;
+		}
+			
+	}
+
+}

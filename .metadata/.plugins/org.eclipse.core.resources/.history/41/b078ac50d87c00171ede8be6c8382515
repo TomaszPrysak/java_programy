@@ -1,0 +1,10 @@
+package obiekty;
+
+public class Obiekty_tekstowe {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,28 @@
+package cwiczenie_J52;
+
+public class Employee {
+	
+	String imie, nazwisko, rok_urodzenia;
+	int staz_pracy;
+	
+	Emlpoyee(
+			String imie,
+			String nazwisko,
+			String rok_urodzenia,
+			int staz_pracy){
+		this.imie = imie;
+		this.nazwisko = nazwisko;
+		this.rok_urodzenia = rok_urodzenia;
+		this.staz_pracy = staz_pracy;
+	}
+	
+	public String wypisz(){
+		System.out.println("Dane pracownika:");
+		System.out.println("Imiê" + imie);
+		System.out.println("Nazwisko" + nazwisko);
+		System.out.println("Sta¿ pracy: " + staz_pracy);
+		System.out.println("Rok urodzenia:" + rok_urodzenia);
+		
+	}
+
+}

@@ -1,0 +1,14 @@
+package cwiczenie_J53;
+
+public class Produkty {
+		
+		String produkt;
+		double cena;
+		
+		Produkty(String produkty, double cena){
+			this.produkt = produkt;
+			
+			
+	}
+
+}

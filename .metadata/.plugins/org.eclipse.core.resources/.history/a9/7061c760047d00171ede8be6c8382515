@@ -1,0 +1,30 @@
+package cwiczenie_J53;
+
+import java.io.FilterInputStream;
+import java.util.HashMap;
+import java.util.Scanner;
+
+public class Sprzedaz {
+
+	Sprzedaz(int kwota){
+		this.kwota = kwota;
+	}
+	
+	public suma (){
+		
+	}
+	
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(new FilterInputStream(System.in){ // deklarujemy obekt typu scanner o nazwie odczyt i inicjalizujemy go 
+			@Override
+			public void close(){};
+		});
+		
+		HashMap<String,Integer> sklep = new HashMap<String,Integer>();
+		
+		System.out.println("Podaj produkt jaki chcesz kupiæ: ");
+
+	}
+
+}

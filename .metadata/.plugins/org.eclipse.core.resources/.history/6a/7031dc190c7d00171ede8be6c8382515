@@ -1,0 +1,19 @@
+package przeciazanie;
+
+public class Przeciazanie {
+		
+		String imie, imie2, nazwisko, nazwisko2;
+		
+		public Przeciazanie(String imie, String imie2, String nazwisko, String nazwisko2){
+			super();
+			this.imie = imie;
+			this.imie2 = imie2;
+			this.nazwisko = nazwisko;
+			this.nazwisko2 = nazwisko2;
+	}
+		public static void main(String[] arg){
+			Przeciazanie p1 = new Przeciazanie("Anna", "Maria", "Nowak", "Kowalska");
+			Przeciazanie p2 = 
+		}
+
+}

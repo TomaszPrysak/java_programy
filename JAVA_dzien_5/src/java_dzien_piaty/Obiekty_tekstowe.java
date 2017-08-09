@@ -1,0 +1,46 @@
+package java_dzien_piaty;
+
+public class Obiekty_tekstowe {
+
+	// zakresy zmiennych
+	
+	// zmienna klasowa
+	static String p = "zmienna globalna"; // zmienna p zdeklarowana w ca³ej klasie programu i mo¿na siê do niej odwo³ywaæ w ramach ca³ego kodu który zamkniêty jest w klamry klasy
+	
+	static void info(){ // metoda info, poza metod¹ g³ówn¹, aby siê do niej odnieœæ to w metodzie g³ównej musimy siê do niej odwo³aæ
+		int b = 2;
+	
+		if(true){
+			int c =3;
+		}
+		
+		System.out.println("Jestem w metodzie info");
+		System.out.println("w metodzie info (zmienna klasowa p): " + p);
+	}
+	
+	public static void main(String[] args) { // metoda g³ówna, jest zawsze uruchamiany na pocz¹tku, wszystko co siê w nim dzieje to zaczyna siê tutaj, a je¿eli mamy jakieœ inne metody musimy siê do nich odwo³aæ
+		
+		// zmienna w metodzie g³ównej
+		int a = 1; // zmienna zadeklarowana na pocz¹tku metody, jest globalna dla tej metody czyli public static void main, mo¿na siê do niej odnosiæ w ca³ym kodzie w ramach tej metody, bêdzie widoczna w pêtlach itd...
+		
+		for (int i = 0; i < 9; i++){ // zmienna i znajduj¹ca siê w pêtli, zakres jej widocznoœci jest pomiêdzy klamrami pêtli, poza pêtl¹ nie m¿na siê do niej odnosiæ
+			// zakres lokalny zmiennej i w pêtli for
+			System.out.println("zmienna lokalna pêtli (i): " + i);
+			a = a + 1; // zmienna globalna metody static void main i dlatego mo¿na siê do niej odnosiæ w pêtli, mo¿emy ja modyfikowaæ
+			System.out.println("zmienna metody w pêtli (a): " + a); 
+		}
+		
+		// zmienna nie jest widoczna poza pêtl¹
+		//System.out.println("w pêtli" + i); // zmienna i która zosta³a zdeklarowana w pêtli jest widoczna tylko w pêtli i nie mo¿e zostac wypisana
+
+		System.out.println("w metodzie g³ównej (zmienna metody g³ówej a): " + a); // zmienna metody g³ównej
+		
+		// zmienna klasowa widoczna w metodzie g³ównej
+		System.out.println("w metodzie g³ównej (zmienna klasowa p): " + p);
+		
+		// wywo³anie metody info:
+		info();
+		
+	}
+
+}
