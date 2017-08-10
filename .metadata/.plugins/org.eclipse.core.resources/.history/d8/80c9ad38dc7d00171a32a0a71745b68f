@@ -1,0 +1,11 @@
+package cwiczenie_J66;
+
+public class Uniwersytet {
+
+	public static void main(String[] args) {
+		
+		Student st1 = new Student("Tomek", "Prysak", 207111);
+		
+	}
+
+}

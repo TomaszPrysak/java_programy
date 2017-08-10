@@ -1,0 +1,17 @@
+package specyfikatory;
+
+public class GetSet {
+	
+	private int a;
+	private String t;
+	
+	public GetSet(){}
+	public GetSet(int a, String t) {
+		super();
+		this.a = a;
+		this.t = t;
+	}
+	
+	
+	
+}

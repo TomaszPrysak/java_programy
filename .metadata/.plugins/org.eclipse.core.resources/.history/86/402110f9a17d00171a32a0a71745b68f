@@ -1,0 +1,35 @@
+package cwiczenie_J61;
+
+public class Gatunek {
+	
+	String gatunek, rodzaj;
+	int liczbaChromosomow;
+	
+	Gatunek(String gatunek, String rodzaj, int liczbaChromosomow){
+		super();
+		this.gatunek = gatunek;
+		this.rodzaj = rodzaj;
+		this.liczbaChromosomow = liczbaChromosomow;
+	}
+
+	public String printRodzajgatunek(){
+		return "rodzaj: " + this.rodzaj + " gatunek: " + this.gatunek;
+	}
+	
+	public String printLiczbachromosomow(){
+		return "liczba chromosomow: " + this.liczbaChromosomow;
+	}
+	
+	public String printWszystkiedane(){
+		return this.printRodzajgatunek() + this.printLiczbachromosomow();
+	}
+	
+	public static void main(String[] args) {
+		
+		Gatunek orzelBielik = new Gatunek("orze³", "bielik", 30);
+		
+		System.out.println(orzelBielik);
+
+	}
+
+}

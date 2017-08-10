@@ -1,0 +1,17 @@
+package skladowe_statyczne;
+
+public class Statyczne {
+
+	// Normalnie aby siê odwo³ac do metody info wymusza stworzenie jakiegoœ obiektu aby mozna by³o po nazwie obieku i kropce wyœwietliæ nazwê metody i ja uruchomiæ
+	
+	public void info(){
+		System.out.println("Jestem info");
+	}
+	
+	public static void main(String[] args) {
+		
+		
+		
+	}
+
+}

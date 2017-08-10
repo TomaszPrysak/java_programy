@@ -1,0 +1,10 @@
+package cwiczenie_J61;
+
+public class Gatunek {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

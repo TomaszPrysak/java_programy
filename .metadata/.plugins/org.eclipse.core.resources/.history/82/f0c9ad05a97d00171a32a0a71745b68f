@@ -1,0 +1,61 @@
+package cwiczenie_J61;
+
+import java.util.ArrayList;
+
+public class Gatunek {
+	
+	String gatunek, rodzaj;
+	int liczbaChromosomow;
+	
+	static ArrayList<Gatunek> listaGatunkow = new ArrayList<Gatunek>();
+	
+	Gatunek(String gatunek, String rodzaj, int liczbaChromosomow){
+		super();
+		this.gatunek = gatunek;
+		this.rodzaj = rodzaj;
+		this.liczbaChromosomow = liczbaChromosomow;
+		listaGatunkow.add(this);
+	}
+
+	public void printGatunki(){
+		for (Gatunek v: listaGatunkow){
+			if(v.rodzaj.equals(this.rodzaj)){
+			System.out.println(v.printWszystkiedane() + "\n\n");
+			}
+		}
+	}
+	
+	public String printRodzajgatunek(){
+		return "rodzaj: " + this.rodzaj + " ,gatunek: " + this.gatunek;
+	}
+	
+	public String printLiczbachromosomow(){
+		return "liczba chromosomow: " + this.liczbaChromosomow;
+	}
+	
+	public String printWszystkiedane(){
+		return this.printRodzajgatunek() + "\n" + this.printLiczbachromosomow();
+	}
+	
+	public static void main(String[] args) {
+		
+		Gatunek orzelBielik = new Gatunek("bielik", "orze³", 90);
+		Gatunek orzelPrzedni = new Gatunek("przedni", "orze³", 90);
+		Gatunek orzelTylni = new Gatunek("tylni", "orze³", 90);
+		Gatunek orzelBoczny = new Gatunek("boczny", "orze³", 90);
+		
+		System.out.println(orzelBoczny.printWszystkiedane());
+		
+		orzelTylni.printGatunki();
+		
+		Gatunek kotDachowiec = new Gatunek("dachowiec", "kot", 1);
+		Gatunek kotPerski = new Gatunek("perski", "kot", 1);
+		Gatunek kotRadziecki = new Gatunek("radziecki", "kot", 1);
+		
+		System.out.println(kotDachowiec.printWszystkiedane());
+		
+		kotDachowiec.printGatunki();
+		
+	}
+
+}

@@ -1,0 +1,14 @@
+package cwiczenie_J65;
+
+public class Terminal {
+
+	public static void main(String[] args) {
+		
+		Magazyn p1 = new Magazyn();
+		
+		p1.dodajProdukt("monitor");
+		
+
+	}
+
+}

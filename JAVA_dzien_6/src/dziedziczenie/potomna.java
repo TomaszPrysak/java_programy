@@ -1,0 +1,10 @@
+package dziedziczenie;
+
+public class potomna {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

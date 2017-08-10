@@ -1,13 +1,15 @@
 package programowanie_obiektowe;
 
+
 public class Auto {
 
 	// Deklarujemy zmienne (pola) naszej klasy Auto
-	int iloscDrzwi = 2; // podczas wywo³ania konstruktora domyœlnego i w nim bedzie przypisa wartoœæ dla zmiennej iloscDrzwi, dlatego jak stworzymy nowy obiekt i wywo³amy tego obiektu zmienna iloscDrzwi to bêdzie 2
+	public int iloscDrzwi = 2; // podczas wywo³ania konstruktora domyœlnego i w nim bedzie przypisa wartoœæ dla zmiennej iloscDrzwi, dlatego jak stworzymy nowy obiekt i wywo³amy tego obiektu zmienna iloscDrzwi to bêdzie 2
 	double cena; // stworzyliœmy obiekt gdzie poprzez konstruktor naurziclismy cenê 100 000 z³
 	//double brutto;
 	String kolorNadwozia, kolorFelg, kolorOpon, marka, model;
 	
+	// Metoda
 	public double rabat(){
 		cena = cena * 0.9;
 		return cena;
@@ -43,9 +45,9 @@ public class Auto {
 	*/
 	
 	// Konstruktor domyslny
-	Auto(){}
+	public Auto(){}
 	// Konstruktor z argumentami które podajemy
-	Auto(
+	public Auto(
 			int iloscDrzwi, 
 			String kolorNadwozia, 
 			String kolorFelg, 

@@ -1,5 +1,8 @@
 package przeciazanie;
 
+import programowanie_obiektowe.*; // importowanie ca³ego pakietu
+import programowanie_obiektowe.Auto; // importowanie konkretnej klasy z pakietu
+
 public class Przeciazanie {
 		
 		String imie, imie2, nazwisko, nazwisko2;
@@ -44,6 +47,11 @@ public class Przeciazanie {
 			//Przeci¹zanie ze zmiennym typem parametrów
 			p1.dodaj(2,5); // 
 			
+			Auto f1 = new Auto(2, "czerwony", "bia³y", "czewrwony", "Fiat", "Punto", 3000);
+			
+			f1.bruttoNetto();
+			
+			System.out.println(f1.iloscDrzwi);
 		}
 
 }

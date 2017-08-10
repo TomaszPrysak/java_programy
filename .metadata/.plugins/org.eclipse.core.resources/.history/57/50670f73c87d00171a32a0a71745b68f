@@ -1,0 +1,16 @@
+package specyfikatory;
+
+public class specyfikatory_testowe {
+
+	public static void main(String[] args) {
+		
+		GetSet gs1 = new GetSet();
+		GetSet gs2 = new GetSet(4, "napis");
+
+		System.out.println(gs1.getA());
+		gs1.setA(15);
+		System.out.println(gs1.getA());
+		
+	}
+
+}

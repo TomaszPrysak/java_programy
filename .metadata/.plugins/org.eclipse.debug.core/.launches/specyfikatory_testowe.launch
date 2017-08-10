@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/JAVA_dzien_6/src/specyfikatory/specyfikatory_testowe.java"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="specyfikatory.specyfikatory_testowe"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="JAVA_dzien_6"/>
+</launchConfiguration>

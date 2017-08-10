@@ -1,0 +1,64 @@
+package cwiczenie_J65;
+
+import java.io.FilterInputStream;
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Magazyn {
+
+	Scanner input = new Scanner(new FilterInputStream(System.in){
+		@Override
+		public void close(){};
+	});
+	
+	String nazwa;
+	int ilosc;
+	double cena;
+	
+	ArrayList<Magazyn> listaProduktow = new ArrayList<>();
+	
+	public Magazyn(){}
+	public Magazyn(String produkt, int ilosc, double cena) {
+		super();
+		this.nazwa = produkt;
+		this.ilosc = ilosc;
+		this.cena = cena;
+		listaProduktow.add(this);
+	}
+	
+	public void nazwaProduktu(String a){
+		this.nazwa = a;
+	}
+	
+	public void iloscProduktu(int a){
+		this.ilosc = a;
+	}
+	
+	public void cenaProduktu(double a){
+		this.cena = a;
+	}
+	
+	public void dodajProdukt(Magazyn produkt){
+		System.out.println("Podaj nazwê produktu:");
+		this.nazwa = input.nextLine();
+		System.out.println("Podaj cenê produktu:");
+		this.cena = input.nextDouble();
+		System.out.println("Podaj iloœæ produktu:");
+		this.ilosc = input.nextInt();
+		listaProduktow.add(this);
+	}
+	
+	public String wypiszProdukt(){
+		return "Produkt: " + this.nazwa + " , cena(jedn.): " + this.cena + " , iloœæ: " + this.ilosc;
+	}
+	
+	public String wypiszCenyproduktow(){
+		return "Produkt: " + this.nazwa + " , cena(jedn.): " + this.cena;
+	}
+	
+	public void wypiszWszystkieprodukty(){
+		for(Magazyn v: listaProduktow){
+			System.out.println(v.wypiszProdukt() + "\n");
+		}
+	}
+}

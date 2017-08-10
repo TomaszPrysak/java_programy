@@ -1,0 +1,14 @@
+package cwiczenie_J66;
+
+public class Student {
+	
+	public static int nr_indeksu;
+	public String imie, nazwisko;
+	
+	
+	public static void main(String[] args) {
+		
+		
+	}
+
+}

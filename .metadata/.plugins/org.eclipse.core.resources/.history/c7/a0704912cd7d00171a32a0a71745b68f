@@ -1,0 +1,42 @@
+package cwiczenie_J65;
+
+import java.util.ArrayList;
+
+public class Magazyn {
+
+	String nazwa;
+	int ilosc;
+	double cena;
+	
+	ArrayList<Magazyn> listaProduktow = new ArrayList<>();
+	
+	public Magazyn(){}
+	public Magazyn(String produkt, int ilosc, double cena) {
+		super();
+		this.nazwa = produkt;
+		this.ilosc = ilosc;
+		this.cena = cena;
+		listaProduktow.add(this);
+	}
+	
+	public void nazwaProduktu(String a){
+		this.nazwa = a;
+	}
+	
+	public void iloscProduktu(int a){
+		this.ilosc = a;
+	}
+	
+	public void cenaProduktu(double a){
+		this.cena = a;
+	}
+	
+	pb
+	
+	public static void main(String[] args) {
+		
+		
+
+	}
+
+}
