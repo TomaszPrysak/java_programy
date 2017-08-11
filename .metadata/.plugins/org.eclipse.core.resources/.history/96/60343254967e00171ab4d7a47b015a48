@@ -1,0 +1,14 @@
+package cwiczenie_J71;
+
+public class BZWBK extends KontoBankowe {
+
+	@Override
+	public void insert() {
+	}
+
+	@Override
+	public void addDebit(long nrKonta, float debit) {
+		
+		
+	}
+}

@@ -1,0 +1,9 @@
+package cwiczenie_67;
+
+public class Tire extends Part {
+	
+	int rozmiar;
+	int szerokosc;
+	int wysokosc;
+	
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;cwiczenie_67.Tire&apos; to &apos;Tyre&apos;&#x0D;&#x0A;- Original project: &apos;Java_dzien_6_cwiczenia&apos;&#x0D;&#x0A;- Original element: &apos;cwiczenie_67.Tire&apos;&#x0D;&#x0A;- Renamed element: &apos;cwiczenie_67.Tyre&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Tire&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;cwiczenie_67{Tire.java[Tire" matchStrategy="1" name="Tyre" qualified="false" references="true" similarDeclarations="false" stamp="1502440460795" textual="false" version="1.0"/>
+</session>

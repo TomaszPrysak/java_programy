@@ -1,0 +1,10 @@
+package klasy_abstrakcyjne;
+
+public class Jablka {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

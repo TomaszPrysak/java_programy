@@ -1,0 +1,25 @@
+package interfejsy;
+
+public class Human_test implements Human {
+
+	String imie, nazwisko;
+	
+	public Human_test(String imie, String nazwisko) {
+		this.imie = imie;
+		this.nazwisko = nazwisko;
+	}
+
+	@Override
+	public void printInfo() {
+		System.out.println(rodzaj + gatunek);
+		
+	}
+	
+	public static void main(String[] args) {
+		
+
+	}
+
+
+
+}

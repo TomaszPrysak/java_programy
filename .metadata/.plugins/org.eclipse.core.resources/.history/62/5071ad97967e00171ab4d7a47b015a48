@@ -1,0 +1,21 @@
+package cwiczenie_J71;
+
+public class KontoTest {
+
+	public static void main(String[] args) {
+
+		BZWBK kb2 = new BZWBK();
+		
+		
+		
+		PKO kb1 = new PKO();
+		
+		System.out.println(kb1.saldo);
+		kb1.addSaldo(3.25f);
+		System.out.println(kb1.saldo);
+		kb1.subbSaldo(1f);
+		System.out.println(kb1.saldo);
+		
+	}
+
+}

@@ -1,0 +1,19 @@
+package dziedziczenie;
+
+public class GetSetPotomna extends GetSetBazowa {
+	
+	public GetSetPotomna(String imie, int pesel) {
+		super(imie, pesel);
+	}
+
+	public static void main(String[] args) {
+		
+		GetSetPotomna gs1 = new GetSetPotomna("Tomasz", 958726242);
+		
+		System.out.println(gs1.getImie());
+		
+		System.out.println(gs1.getPesel());
+
+	}
+
+}

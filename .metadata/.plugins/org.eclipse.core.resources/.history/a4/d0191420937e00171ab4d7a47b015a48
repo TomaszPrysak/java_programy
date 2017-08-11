@@ -1,0 +1,23 @@
+package cwiczenie_J71;
+
+public class KontoBankowe1 extends KontoBankowe {
+	
+	@Override
+	public void addDebit() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void insert() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	public static void main(String[] args) {
+	
+	
+	}
+
+
+}

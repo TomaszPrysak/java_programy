@@ -1,0 +1,7 @@
+package cwiczenie_67;
+
+public class ExhaustPart extends Part {
+
+	boolean standardEmisji;
+	
+}

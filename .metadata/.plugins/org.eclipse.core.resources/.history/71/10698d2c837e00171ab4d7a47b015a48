@@ -1,0 +1,12 @@
+package interfejsy;
+
+public class Human_test implements Human {
+
+	
+	
+	public static void main(String[] args) {
+		
+
+	}
+
+}

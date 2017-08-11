@@ -1,0 +1,13 @@
+package cwiczenie_67;
+
+public class Wheel extends Part {
+
+	int cale;
+
+	public Wheel(String producent, String model, String seria, int cale) {
+		super(producent, model, seria);
+		this.cale = cale;
+	}
+	
+	
+}

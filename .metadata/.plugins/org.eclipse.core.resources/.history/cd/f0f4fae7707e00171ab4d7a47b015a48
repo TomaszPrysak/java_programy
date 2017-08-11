@@ -1,0 +1,13 @@
+package cwiczenie_67;
+
+public class ExhaustPart extends Part {
+	
+	boolean standardEmisji;
+
+	public ExhaustPart(String producent, String model, String seria, boolean standardEmisji) {
+		super(producent, model, seria); // super oznacza ¿e dziedziczymy z klasy nadrzêdnej i 
+		this.standardEmisji = standardEmisji;
+	}
+	
+	
+}

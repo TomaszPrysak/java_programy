@@ -1,0 +1,31 @@
+package dziedziczenie;
+
+public class GetSetPotomna extends GetSetBazowa {
+	
+	public GetSetPotomna(String imie, int pesel) {
+		super(imie, pesel);
+	}
+
+	public static void main(String[] args) {
+		
+		GetSetPotomna gs1 = new GetSetPotomna("Tomasz", 958726242);
+		
+		System.out.println(gs1.getImie());
+		
+		System.out.println(gs1.getPesel());
+		
+		// gs1.imie = "Ala"; zmienna niewidoczna ze wzglêdnu na private w Gazowej
+		
+		gs1.setImie("Ala");
+		
+		gs1.setPesel(846921336);
+		
+		System.out.println(gs1.getImie());
+		
+		System.out.println(gs1.getPesel());
+		
+		GetSetPotomna gs2 = new GetSetBazowa("Olga", 2494644464);
+
+	}
+
+}

@@ -1,0 +1,17 @@
+package cwiczenie_J70;
+
+public class Apple extends Fruit {
+
+	String odmiana;
+
+	public Apple(String odmiana) {
+		super();
+		this.odmiana = odmiana;
+	}
+	
+	public void printInfo(){
+		super.printInfo();
+		System.out.println(kategoria + this.odmiana);
+	}
+	
+}

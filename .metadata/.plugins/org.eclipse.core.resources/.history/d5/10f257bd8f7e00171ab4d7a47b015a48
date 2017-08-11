@@ -1,0 +1,11 @@
+package klasy_abstrakcyjne;
+
+public class Jablka extends Owoce {
+
+	public static void main(String[] args) {
+		
+		
+
+	}
+
+}

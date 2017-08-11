@@ -1,0 +1,16 @@
+package cwiczenie_67;
+
+public class Tire extends Part {
+	
+	int rozmiar;
+	int szerokosc;
+	int wysokosc;
+	
+	public Tire(String producent, String model, String seria, int rozmiar, int szerokosc, int wysokosc) {
+		super(producent, model, seria);
+		this.rozmiar = rozmiar;
+		this.szerokosc = szerokosc;
+		this.wysokosc = wysokosc;
+	}
+	
+}

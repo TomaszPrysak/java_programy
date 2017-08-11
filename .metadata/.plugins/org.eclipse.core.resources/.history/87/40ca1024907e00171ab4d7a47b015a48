@@ -1,0 +1,22 @@
+package klasy_abstrakcyjne;
+
+public class Jablka extends Owoce {
+	
+	String odmiana;
+	
+	
+	
+	@Override
+	public void printInfo() {
+		System.out.println(typ + " " + dojrzaly + odmiana);		
+	}
+	
+	public static void main(String[] args) {
+		
+		
+
+	}
+
+
+
+}

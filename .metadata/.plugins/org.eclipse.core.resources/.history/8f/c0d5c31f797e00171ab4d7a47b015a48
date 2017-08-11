@@ -1,0 +1,22 @@
+package cwiczenie_J68;
+
+public class Punkt2D {
+
+	int x, y;
+
+	public Punkt2D(int x, int y) {
+		super();
+		this.x = x;
+		this.y = y;
+	}
+
+	public Punkt2D() {
+	}
+	
+	public void Przesuniecie(int a, int b){
+		this.x = x + a;
+		this.y = y + b;
+		System.out.println("Wspó³rzêdna x: " + this.x + "\nWspó³rzêdna y: " + this.y);
+	}
+	
+}

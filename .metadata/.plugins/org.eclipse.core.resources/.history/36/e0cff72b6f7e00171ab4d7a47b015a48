@@ -1,0 +1,19 @@
+package cwiczenie_67;
+
+public class Part {
+	
+	static int licznik;
+	final int nr;
+	String producent, model;
+	int seria;
+	
+	public Part(int nr, String producent, String model, int seria) {
+		super();
+		licznik++;
+		this.nr = nr;
+		this.producent = producent;
+		this.model = model;
+		this.seria = seria;
+	}
+	
+}

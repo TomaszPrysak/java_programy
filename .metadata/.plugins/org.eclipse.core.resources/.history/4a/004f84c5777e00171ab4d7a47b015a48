@@ -1,0 +1,9 @@
+package cwiczenie_J68;
+
+public class Punkt3D extends Punkt2D {
+	
+	int z;
+	
+	
+
+}

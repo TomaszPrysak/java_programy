@@ -1,0 +1,10 @@
+package cwiczenie_67;
+
+public class Part {
+	
+	static int id;
+	int nr;
+	String producent, model;
+	int seria;
+	
+}

@@ -1,0 +1,18 @@
+package bazy_danych;
+
+public class DB_connection {
+	
+	// url po³¹czenia z localhost (nazwaSterownika://adres/nazwaBazy)
+	final static String connectionURL = "jdbc:mysql://localhost:3306/skoczkowie";
+	// nazwê u¿ytkownika (profilu) w Workbenchu 
+	final static String name = "root";
+	// has³o dla tego konkretnego u¿ytkownika (profilu)
+	final static String pass = "Pitek1962mySQLF700Gs";
+	
+	
+	
+	public static void main(String[] args) {
+
+	}
+
+}

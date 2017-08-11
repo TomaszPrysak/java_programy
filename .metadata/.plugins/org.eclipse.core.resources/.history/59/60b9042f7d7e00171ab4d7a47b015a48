@@ -1,0 +1,15 @@
+package cwiczenie_J70;
+
+public class Fruit {
+	
+	String kategoria = "Owoc";
+
+	public Fruit() {
+		super();
+	}
+	
+	public void printOwoc(){
+		System.out.println(kategoria);
+	}
+
+}
