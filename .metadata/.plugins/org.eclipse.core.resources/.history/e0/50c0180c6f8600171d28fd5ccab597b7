@@ -1,0 +1,27 @@
+package cwiczenie_J90;
+
+import java.util.Random;
+
+public class Cwiczenie_J90 {
+	
+	public static void losujWyjatek(){
+		
+		Random gen = new Random();
+		
+		switch(){
+		case 0:
+			
+		case 1:
+		
+		case 2:
+		}
+		
+	}
+	
+	public static void main(String[] args) {
+		
+		
+
+	}
+
+}

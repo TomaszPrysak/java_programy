@@ -1,0 +1,46 @@
+package operacje_na_plikach;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.Scanner;
+
+public class OperacjePliki {
+
+	public static void main(String[] args) throws IOException {
+		
+		// odczytywanie z pliku
+		
+		File plik = new File("Pliczek1.txt"); // tworzymy obiekt klasy File s³u¿¹cy do odczytu z pliku oraz podajemy nazwê pliku do którego bêdziemy sie odwo³ywaæ, czyli go odczytywaæ, musimy go utworzyæ w "katalogu" projektu tj. JAVA_dzien_8, po prostu klikaj¹c prawym i NEW -> File UWAGA!!! w tym wypadku my podajemy tylko nazwê pliku poniewa¿ ten plik znajduje siê w katalogu projektu, je¿eli byœmy chcieli odwo³aæ siê na plik w innej lokalizacji wówczas podajemy pe³n¹ lokalizacjê pliku
+		
+		Scanner odczyt = new Scanner(plik); // tworzymy Scanner do odczytu
+		
+		String text1 = odczyt.nextLine(); // tworzymy zmienn¹ w której bêdzie przechowywany pojedyñczy wiersz z naszego pliku UWAGA!!! plik odczytywany jest w postaci jednego wiersza i stosuj¹c pojedyñcz¹ komendê odczytu odczytamy tylko pojedyñczy wiersz, aby odczytaæ wszystko i wyœwietliæ musimy to zrobiæ w pêtli
+		
+		System.out.println(text1); // wyœwietlamy to co odczytaliœmy z pierwszego wiersza
+		
+		String text2 = odczyt.nextLine(); // tworzoymy kolejna zmienn¹ w której przechowujemy kolejny pojedyñczy wiersz z naszego UWAGA!!! Je¿eli nie bêdzie nic w drugiej linijce to bêdzie b³¹d - oczywiœcie lepiej to w pêtli
+		
+		System.out.println(text2); // wypisujemy to co w drugiej linijce - oczywiœcie lepiej to w pêtli
+		
+		odczyt.close(); // zamykamy strumieñ odczytu pliku
+		
+		// zapis do pliku
+		
+		// I rodzaj zapisu
+		// w tym przypadku nadpisuje to co by³o wczeœniej w pliku
+		PrintWriter zapis = new PrintWriter(plik); // tworzymy obiek klasy PrintWriter s³u¿¹cy do zapisu do pliku oraz podajemy nazwê pliku w którym bêdziemy zapisywaæ
+		
+		// II rodzaj zapisu
+		// w tym wypadku zachowuje wszystko co by³o wczeœniej w pliku a nowe rzeczy zapisuje na samym koñcu, argument True mówi to, ¿e zachowuje to co by³o wczeœniej
+		FileWriter zapis1 = new FileWriter(plik, true); // obiek klasy FileWriter s³u¿¹cy do zapisu lub do dopisania w przypadku czystego pliku zawartoœci oraz podajemy nazwê pliku
+		
+		zapis.println("Zawartoœæ zapisu"); // komenda do zapisu do pliku UWAGA!!! je¿eli wczeœniej coœ by³o w tym pliku to zostaje zast¹pione... pomimo, ¿e odczyt nastepuje po wierszach to zapisuy zastepuje wszystko nie tylko od pierwszego wiersza
+		
+		zapis.close();
+
+	}
+
+}

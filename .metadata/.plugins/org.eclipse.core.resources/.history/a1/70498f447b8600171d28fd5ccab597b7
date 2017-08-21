@@ -1,0 +1,20 @@
+package cwiczenie_J93;
+
+import java.util.Scanner;
+
+public class Cwiczenie_J93 {
+
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+		
+		String path = "";
+		
+		System.out.println("Podaj œciê¿kê do pliku:");
+		path = input.nextLine();
+		
+		
+		
+	}
+
+}

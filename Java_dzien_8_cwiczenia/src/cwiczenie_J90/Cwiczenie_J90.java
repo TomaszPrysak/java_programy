@@ -1,0 +1,41 @@
+package cwiczenie_J90;
+
+import java.util.Random;
+
+public class Cwiczenie_J90 {
+	
+	private class MyException1 extends MyExceptions{}
+	private class MyException2 extends MyExceptions{}
+	
+	public void losuj() throws MyException1, MyException2, MyExceptions{
+		
+		Random gen = new Random();
+		
+		switch(gen.nextInt(3)){
+		case 0:
+			throw new MyException1();
+		case 1:
+			throw new MyException2();
+		case 2:
+			throw new MyExceptions();
+		}
+		
+	}
+	
+	public static void main(String[] args) {
+		
+		Cwiczenie_J90 test = new Cwiczenie_J90();
+		
+		try{
+			test.losuj();
+		}catch(MyException1 e){
+			System.out.println("Z³apano wyj¹tek klasy: " + e.getClass());
+		}catch(MyException2 e){
+			System.out.println("Z³apano wyj¹tek klasy: " + e.getClass());
+		}catch(MyExceptions e){
+			System.out.println("Z³apano wyj¹tek klasy: " + e.getClass());
+		}
+
+	}
+
+}

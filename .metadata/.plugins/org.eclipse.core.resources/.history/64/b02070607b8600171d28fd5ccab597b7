@@ -1,0 +1,28 @@
+package cwiczenie_J93;
+
+import java.io.File;
+import java.util.Scanner;
+
+public class Cwiczenie_J93 {
+
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+		
+		String path = "";
+		
+		System.out.println("Podaj œciê¿kê pliku:");
+		path = input.nextLine();
+		
+		File testFile = new File(path);
+		
+		Scanner odczyt_pliku = new Scanner(testFile);
+		
+		while(odczyt_pliku.hasNextLine()){
+			System.out.print(odczyt_pliku.nextLine());
+		}
+		
+		
+	}
+
+}

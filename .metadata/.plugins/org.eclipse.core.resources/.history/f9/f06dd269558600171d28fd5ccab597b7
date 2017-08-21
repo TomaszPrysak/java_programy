@@ -1,0 +1,22 @@
+package cwiczenie_J84;
+
+public class Employee extends Person {
+	
+	private int pensja;
+
+	public int getPensja() {
+		return pensja;
+	}
+
+	public void setPensja(int pensja) {
+		this.pensja = pensja;
+	}
+
+	public Employee(String imie, String nazwisko, int pensja) {
+		super(imie, nazwisko);
+		this.pensja = pensja;
+	}
+	
+	
+	
+}

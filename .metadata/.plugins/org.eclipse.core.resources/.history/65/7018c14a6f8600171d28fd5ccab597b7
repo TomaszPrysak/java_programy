@@ -1,0 +1,32 @@
+package cwiczenie_J90;
+
+import java.util.Random;
+
+public class Cwiczenie_J90 {
+	
+	private class MyExcetpion1 extends MyException{}
+	private class MyExcetpion2 extends MyException{}
+	private class MyExcetpion3 extends MyException{}
+	
+	public static void losujWyjatek(){
+		
+		Random gen = new Random();
+		
+		switch(){
+		case 0:
+			throw new MyException1();
+		case 1:
+			throw new MyException2();
+		case 2:
+			throw new MyException3();
+		}
+		
+	}
+	
+	public static void main(String[] args) {
+		
+		
+
+	}
+
+}

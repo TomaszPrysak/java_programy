@@ -1,0 +1,15 @@
+package cwiczenie_J82;
+
+import java.io.File;
+
+public class Test {
+
+	public static void main(String[] args) {
+		
+		File plik = new File("ksiazki.txt");
+		
+		
+
+	}
+
+}

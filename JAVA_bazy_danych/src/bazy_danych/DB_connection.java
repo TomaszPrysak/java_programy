@@ -1,6 +1,10 @@
 package bazy_danych;
 
-import java.sql.*;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
 
 
 public class DB_connection {
@@ -22,7 +26,8 @@ public class DB_connection {
 		
 		// utworzenie wyra¿enia SQL
 		Statement stmt = con.createStatement();
-		
+		// updat, delete, insert
+		int d = stmt.executeUpdate("delete from zawodnicy where imie = 'Adam'");
 		// wykonanie zapytania 
 		ResultSet rs=stmt.executeQuery("select * from zawodnicy");
 		while(rs.next()){

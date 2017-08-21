@@ -1,0 +1,4 @@
+Tomek, Pitek, 10
+Marek, Sobol, 20
+Pawe³, Kaczor, 30
+Olga, Kacip¹czek, 40Maciek, Z Klanu, 50Ferdek, Kiepski, 1000000

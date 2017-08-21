@@ -1,0 +1,33 @@
+package cwiczenie_J82;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
+public class Test {
+
+	public static void main(String[] args) throws FileNotFoundException {
+		
+		File plik = new File("ksiazki.txt");
+		
+		Scanner odczyt_z_pliku = new Scanner(plik);
+		
+		odczyt_z_pliku.useDelimiter(",");
+		
+		while(odczyt_z_pliku.hasNextLine()){
+			
+			String odczytNazwa = odczyt_z_pliku.next();
+			String odczytAutor = odczyt_z_pliku.next();
+			String odczytRok = odczyt_z_pliku.next();
+			
+			Book nextBook = new Book(odczytNazwa, odczytAutor, odczytRok);
+			
+			
+			
+		}
+		
+		odczyt_z_pliku.close();
+
+	}
+
+}

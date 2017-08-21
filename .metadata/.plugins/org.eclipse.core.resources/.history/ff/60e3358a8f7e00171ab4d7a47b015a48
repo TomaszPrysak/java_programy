@@ -1,9 +1,0 @@
-package klasy_abstrakcyjne;
-
-public abstract class Owoce {
-	
-	public static String typ = "Owoc";
-	
-	
-	
-}

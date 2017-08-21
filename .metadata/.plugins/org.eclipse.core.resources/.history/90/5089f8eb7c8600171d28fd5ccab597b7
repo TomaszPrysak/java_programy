@@ -1,0 +1,47 @@
+package cwiczenie_J93;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
+public class Cwiczenie_J93 {
+
+	public static void main(String[] args) throws FileNotFoundException {
+		
+		Scanner input = new Scanner(System.in);
+		
+		String path = "";
+		
+		System.out.println("Podaj œciê¿kê pliku:");
+		
+		boolean error = true;
+		
+		while(error){
+		
+			try{
+				
+				path = input.nextLine();
+		
+				File testFile = new File(path);
+				
+				Scanner odczyt_pliku = new Scanner(testFile);
+				
+				while(odczyt_pliku.hasNextLine()){
+					System.out.println(odczyt_pliku.nextLine());
+				}
+				
+				odczyt_pliku.close();
+				
+				error = false;
+				
+			}catch(FileNotFoundException e){
+				
+				System.out.println("Z³a œcie¿ka. Podaj jeszcze raz");
+			}
+		}
+		
+		input.close();
+		
+	}
+	
+}

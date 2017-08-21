@@ -1,0 +1,29 @@
+package cwiczenie_J94;
+
+import java.util.Scanner;
+
+public class Cwiczenie_J94 {
+	
+	public void odczytString(String s){
+		
+	}
+	
+	public void odczytInt(int i){
+		
+	}
+
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+		
+		boolean error = true;
+		
+		while(error){
+			
+			
+			
+		}
+		
+	}
+
+}

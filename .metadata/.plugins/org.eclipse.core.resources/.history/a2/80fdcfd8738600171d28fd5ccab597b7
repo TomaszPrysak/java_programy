@@ -1,0 +1,25 @@
+package cwiczenie_J91;
+
+import java.util.Scanner;
+
+public class Cwiczenie_J91 {
+
+	public static void main(String[] args) {
+		
+		Scanner odczyt_z_klawiatury = new Scanner(System.in);
+		
+		int number = 0;
+		
+		boolean error = true;
+		
+		while(error){
+			System.out.println("Podaj ca³kowit¹ (lub Q - wyjœcie):");
+			number = odczyt_z_klawiatury.nextInt();
+			System.out.println("Zgaduje, ¿e Twoja podana liczba to: " + number);
+		}
+		
+		odczyt_z_klawiatury.close();
+
+	}
+
+}

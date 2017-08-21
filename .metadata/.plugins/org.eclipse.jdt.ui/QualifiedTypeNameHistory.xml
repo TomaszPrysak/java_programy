@@ -8,8 +8,19 @@
 <fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="java.util.HashSet"/>
 <fullyQualifiedTypeName name="java.util.ArrayDeque"/>
-<fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="cwiczenie_J52.Employee"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="cwiczenie_J61.Gatunek"/>
+<fullyQualifiedTypeName name="dziedziczenie.Animal"/>
+<fullyQualifiedTypeName name="cwiczenie_67.Part"/>
+<fullyQualifiedTypeName name="cwiczenie_67.ExhaustPart"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="cwiczenie_J70.Fruit"/>
+<fullyQualifiedTypeName name="klasy_abstrakcyjne.Jablka"/>
+<fullyQualifiedTypeName name="cwiczenie_J71.KontoBankowe"/>
+<fullyQualifiedTypeName name="cwiczenie_J71.KontoBankowe1"/>
+<fullyQualifiedTypeName name="cwiczenie_J72.organizm"/>
+<fullyQualifiedTypeName name="java.sql.DriverManager"/>
+<fullyQualifiedTypeName name="com.mysql.jdbc.Connection"/>
+<fullyQualifiedTypeName name="java.sql.Statement"/>
 </qualifiedTypeNameHistroy>

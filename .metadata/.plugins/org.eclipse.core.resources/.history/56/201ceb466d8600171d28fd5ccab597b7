@@ -1,0 +1,11 @@
+package obsluga_bledow;
+
+public class ObslugaBledow_J89 {
+
+	public static void main(String[] args) {
+		
+		String napis = ""
+		
+	}
+
+}

@@ -1,0 +1,17 @@
+package operacje_na_plikach;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
+public class OperacjePliki {
+
+	public static void main(String[] args) throws FileNotFoundException {
+		
+		File plik = new File("Pliczek1.txt");
+		
+		Scanner odczyt = new Scanner(plik);
+
+	}
+
+}

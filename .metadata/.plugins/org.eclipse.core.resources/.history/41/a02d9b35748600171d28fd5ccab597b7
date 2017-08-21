@@ -1,0 +1,32 @@
+package cwiczenie_J91;
+
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+public class Cwiczenie_J91 {
+
+	public static void main(String[] args) {
+		
+		Scanner odczyt_z_klawiatury = new Scanner(System.in);
+		
+		int number = 0;
+		
+		boolean error = true;
+		
+		while(error){
+			System.out.println("Podaj ca³kowit¹ (lub Q - wyjœcie):");
+			
+			try{number = odczyt_z_klawiatury.nextInt();
+			System.out.println("Zgaduje, ¿e Twoja podana liczba to: " + number);
+			error = false;
+			}catch(InputMismatchException e){
+				System.out.println("Wprowadzona wartoœæ nie jest liczb¹ lub nie jest liczb¹ ca³kowit¹. Wprowadz liczbê ca³kowit¹");
+				odczyt_z_klawiatury.nextLine();
+			}
+		}
+		
+		odczyt_z_klawiatury.close();
+
+	}
+
+}

@@ -1,0 +1,13 @@
+package cwiczenie_J84;
+
+import java.util.ArrayList;
+
+public class Company {
+	
+	private String[] pracownicy;
+	
+	
+	
+	ArrayList<Employee> 
+	
+}

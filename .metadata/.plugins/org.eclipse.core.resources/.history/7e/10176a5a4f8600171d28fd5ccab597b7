@@ -1,0 +1,36 @@
+package cwiczenie_J83;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
+import java.util.Scanner;
+
+public class Cwiczenie_J83 {
+
+	public static void main(String[] args) throws FileNotFoundException {
+		
+		File plik = new File("user.txt");
+		PrintWriter zapis = new PrintWriter(plik);
+		Scanner input = new Scanner(System.in);
+		Scanner odczyt_pliku = new Scanner(plik);
+		String wiersz_pliku = odczyt_pliku.nextLine();
+		
+		String a = "";
+		
+		while(!a.equals("koniec")){
+			a = input.nextLine();
+			zapis.println(a);
+		}
+		
+		zapis.close();
+		
+		while(odczyt_pliku.hasNextLine()){
+			System.out.println(wiersz_pliku);
+		}
+		
+		odczyt_pliku.close();
+		input.close();
+		
+	}
+
+}

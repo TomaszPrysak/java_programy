@@ -1,0 +1,44 @@
+package cwiczenie_J94;
+
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+public class Cwiczenie_J94 {
+	
+	public void odczytString(String s){
+		System.out.print("Podaj ");
+	}
+	
+	public void odczytInt(int i){
+		
+	}
+
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("Podaj imiê:");
+		String imie = input.nextLine();
+
+		System.out.println("Podaj nazwisko: ");
+		String nazwisko = input.nextLine();
+		
+		System.out.println("Podaj wiek: ");
+		try{
+			int wiek = input.nextInt()();
+		}catch(InputMismatchException e){
+			System.out.println("Wiek musi byæ liczb¹ ca³kowit¹");
+		}
+		
+		
+		boolean error = true;
+		
+		while(error){
+			
+			
+			
+		}
+		
+	}
+
+}

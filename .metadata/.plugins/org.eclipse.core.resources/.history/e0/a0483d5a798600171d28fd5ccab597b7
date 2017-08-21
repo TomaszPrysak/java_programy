@@ -1,0 +1,26 @@
+package cwiczenie_J92;
+
+public class Cwiczenie_J92 {
+	
+	void canThrowExc() throws Exception{
+		if (new java.util.Random().nextInt(5) == 0)
+			throw new Exception();
+	}
+	
+	public static void main(String[] args) {
+		
+		Cwiczenie_J92 z = new Cwiczenie_J92();
+		
+		try{
+			z.canThrowExc();
+			z.canThrowExc();
+			z.canThrowExc();
+			z.canThrowExc();
+			z.canThrowExc();
+		}catch (Exception e){
+			System.out.println("Ogólnie");
+		}
+		
+	}
+
+}

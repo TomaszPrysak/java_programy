@@ -1,0 +1,38 @@
+package operacje_na_plikach;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
+import java.util.Scanner;
+
+public class OperacjePliki {
+
+	public static void main(String[] args) throws FileNotFoundException {
+		
+		// odczytywanie z pliku
+		
+		File plik = new File("Pliczek1.txt"); // tworzymy obiekt klasy File oraz podajemy nazwê pliku do którego bêdziemy sie odwo³ywaæ, czyli go odczytywaæ, musimy go utworzyæ w "katalogu" projektu tj. JAVA_dzien_8, po prostu klikaj¹c prawym i NEW -> File 
+		
+		Scanner odczyt = new Scanner(plik); // tworzymy Scanner do odczytu
+		
+		String text1 = odczyt.nextLine(); // tworzymy zmienn¹ w której bêdzie przechowywany pojedyñczy wiersz z naszego pliku UWAGA!!! plik odczytywany jest w postaci jednego wiersza i stosuj¹c pojedyñcz¹ komendê odczytu odczytamy tylko pojedyñczy wiersz, aby odczytaæ wszystko i wyœwietliæ musimy to zrobiæ w pêtli
+		
+		System.out.println(text1); // wyœwietlamy to co odczytaliœmy z pierwszego wiersza
+		
+		String text2 = odczyt.nextLine(); // odczytujemy to co by³o drugiej linijce pliku UWAGA!!! Je¿eli nie bêdzie nic w 
+		
+		System.out.println(text2);
+		
+		odczyt.close();
+		
+		// zapis do pliku
+		
+		PrintWriter zapis = new PrintWriter(plik);
+		
+		zapis.println("Zawartoœæ zapisu"); // komenda do zapisu do pliku 
+		
+		zapis.close();
+
+	}
+
+}

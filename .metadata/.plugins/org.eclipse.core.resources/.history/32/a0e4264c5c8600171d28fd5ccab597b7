@@ -1,0 +1,77 @@
+package cwiczenie_J84;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
+import java.util.Scanner;
+
+public class App {
+
+	public static void main(String[] args) throws FileNotFoundException {
+		
+		Scanner odczyt_z_klawiatury = new Scanner(System.in);
+		
+		Company c1 = new Company();
+		
+		File plik = new File("firma.txt");
+		
+		PrintWriter zapis_do_pliku = new PrintWriter(plik);
+		
+		String klawiatura = "";
+		
+		int i = 0;
+		
+		while(true){
+			System.out.println("(1) - zapis, (2) - oczyt, (3) - koniec");
+			klawiatura = odczyt_z_klawiatury.nextLine();
+			
+			if(klawiatura.equals("1")){ // zapis do pliku
+				
+				while(i < c1.getPracownicy().length){
+					
+					Employee e1 = new Employee();
+					
+					System.out.println("Podaj imiê pracownika:");
+					klawiatura = odczyt_z_klawiatury.nextLine();
+					e1.setImie(klawiatura);
+					zapis_do_pliku.print(klawiatura + ", ");
+					
+					System.out.println("Podaj nazwisko pracownika:");
+					klawiatura = odczyt_z_klawiatury.nextLine();
+					e1.setNazwisko(klawiatura);
+					zapis_do_pliku.print(klawiatura + ", ");
+					
+					System.out.println("Podaj pensjê pracownika:");
+					klawiatura = odczyt_z_klawiatury.nextLine();
+					e1.setPensja(klawiatura);
+					zapis_do_pliku.println(klawiatura);
+					
+					i++;
+				}
+				
+				zapis_do_pliku.close();
+				
+			}else if(klawiatura.equals("2")){ // odczyt z pliku
+				
+				Scanner odczyt_z_pliku = new Scanner(plik);
+				
+				while(odczyt_z_pliku.hasNextLine()){
+					String wiersz_pliku = odczyt_z_pliku.nextLine();
+					System.out.println(wiersz_pliku);
+				}
+				
+				odczyt_z_pliku.close();
+				
+			}else if(klawiatura.equals("3")){ // wyjscie z pêtli
+				
+				break;
+				
+			}
+			
+		}
+		
+		odczyt_z_klawiatury.close();
+		
+	}
+
+}

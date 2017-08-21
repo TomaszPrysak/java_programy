@@ -1,0 +1,10 @@
+package obsluga_bledow;
+
+public class obsluga_bledow {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

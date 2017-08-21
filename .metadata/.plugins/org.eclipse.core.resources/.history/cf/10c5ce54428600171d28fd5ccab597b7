@@ -1,0 +1,10 @@
+package operacje_na_plikach;
+
+public class OperacjePliki {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

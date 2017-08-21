@@ -1,0 +1,5 @@
+package cwiczenie_J90;
+
+public class MyException extends Exception {
+
+}
