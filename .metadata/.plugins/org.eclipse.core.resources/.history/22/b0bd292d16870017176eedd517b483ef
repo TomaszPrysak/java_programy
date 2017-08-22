@@ -1,0 +1,37 @@
+package cwiczenie_J96;
+
+import java.util.Scanner;
+
+public class Cwiczenie_J96 {
+
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+		
+		String [] liczby = new String [10];
+		
+		String klawiatura;
+		
+		int i = 0;
+		
+		while(true){
+			System.out.println("Podaj element tablicy, (w) - wyjœcie");
+			klawiatura = input.nextLine();
+			if(klawiatura.equals("w")){
+				break;
+			}else{
+				liczby[i] = klawiatura;
+				i++;
+			}
+		}
+		
+		while(true){
+			System.out.println("Wybierz który element tablicy chcesz wyœwietliæ, (w) - wyjœcie");
+			klawiatura = input.nextLine();
+		}
+		
+		input.close();
+		
+	}
+
+}

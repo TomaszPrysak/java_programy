@@ -1,0 +1,51 @@
+package cwiczenie_J95;
+
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+public class Obsluga {
+
+	public static void main(String[] args) {
+		
+		Scanner input = new  Scanner(System.in);
+		
+		System.out.println("Witaj w kalkulatorze na miare naszych czasów!!!");
+		System.out.println("Zostaniesz teraz poproszony o wprowadzenie dwóch wartoœci a nastêpnie o wybór operacji na tych wartoœciach");
+		System.out.println("PAMIÊTAJ!!! mog¹ to byæ wartoœci zmiennoprzecinkowe, lecze zapisuj je z kropk¹!!!");
+		
+		Operacje o1 = new Operacje();
+		
+		while(true){
+			System.out.println("Podaj pierwsz¹ wartoœæ:");
+			try{
+				
+				double x_input = input.nextDouble();
+				o1.setX(x_input);
+				break;
+			} catch(InputMismatchException e){
+				System.out.println("Nie czyta³eœ komunikatów na pocz¹tku programu. Podana wartoœæ nie jest liczb¹ zmiennoprzecinkow¹");
+				input.nextLine();
+			}
+		}
+		
+		System.out.println("Wybierz operacjê\n(+) - dodawanie\n(-) - odejmowanie\n(*) - mno¿enie\n(/) - dzielenie");
+		
+		
+		
+		while(true){
+			System.out.println("Podaj drug¹ wartoœæ:");
+			try{
+				double y_input = input.nextDouble();
+				o1.setY(y_input);
+				break;
+			} catch(InputMismatchException e){
+				System.out.println("Nie czyta³eœ komunikatów na pocz¹tku programu. Podana wartoœæ nie jest liczb¹ zmiennoprzecinkow¹");
+				input.nextLine();
+			}
+		}
+		
+		input.close();
+		
+	}
+
+}
