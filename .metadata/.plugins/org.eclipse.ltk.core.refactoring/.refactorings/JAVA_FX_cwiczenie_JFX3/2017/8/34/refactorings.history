@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;JAVA_FX_cwiczenie_JFX3/src/app/view/infoView.fxml&apos; to &apos;InfoView.fxml&apos;" description="Rename resource &apos;infoView.fxml&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/app/view/infoView.fxml" name="InfoView.fxml" stamp="1503492006733" updateReferences="true"/>
+</session>

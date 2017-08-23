@@ -1,0 +1,70 @@
+package app.controller;
+
+import java.io.FileNotFoundException;
+import java.io.FileWriter;
+import java.io.IOException;
+
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.scene.control.Button;
+import javafx.scene.control.MenuItem;
+import javafx.scene.control.TextArea;
+import javafx.scene.control.TextField;
+import javafx.scene.input.MouseEvent;
+
+public class MainController {
+
+    @FXML
+    private MenuItem mi_S;
+
+    @FXML
+    private MenuItem mi_C;
+
+    @FXML
+    private TextField tf;
+
+    @FXML
+    private TextArea ta;
+
+    @FXML
+    private Button btn_C;
+
+    @FXML
+    private Button btn_UC;
+
+    @FXML
+    private Button btn_LC;
+
+    @FXML
+    void clear(MouseEvent event) {
+    	ta.setText("");
+    }
+
+    @FXML
+    void closeApp(ActionEvent event) {
+    	System.exit(0);
+    }
+
+    @FXML
+    void lowerCase(MouseEvent event) {
+    	String text = ta.getText();
+    	text = text.toLowerCase();
+    	ta.setText(text);
+    }
+
+    @FXML
+    void save(ActionEvent event) throws IOException {
+    	String file_name = tf.getText();
+    	FileWriter file_save = new FileWriter(file_name);
+    	file_save.write(ta.getText());
+    	file_save.close();
+    }
+
+    @FXML
+    void upperCase(MouseEvent event) {
+    	String text = ta.getText();
+    	text = text.toUpperCase();
+    	ta.setText(text);
+    }
+
+}

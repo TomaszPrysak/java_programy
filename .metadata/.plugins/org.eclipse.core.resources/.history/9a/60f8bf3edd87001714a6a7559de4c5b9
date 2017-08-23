@@ -1,0 +1,32 @@
+package app.controller;
+
+import javafx.fxml.FXML;
+import javafx.scene.control.Button;
+import javafx.scene.control.MenuItem;
+import javafx.scene.control.TextArea;
+import javafx.scene.control.TextField;
+
+public class MainController {
+
+    @FXML
+    private MenuItem mi_S;
+
+    @FXML
+    private MenuItem mi_C;
+
+    @FXML
+    private TextField tf;
+
+    @FXML
+    private TextArea ta;
+
+    @FXML
+    private Button btn_C;
+
+    @FXML
+    private Button btn_UC;
+
+    @FXML
+    private Button btn_LC;
+
+}

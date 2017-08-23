@@ -1,0 +1,5 @@
+Dane ankietowanego: ddd ddd
+Znajomoœæ jêzyka angielskiego na poziomie: Zaawansowany
+Znajomoœæ jêzyków programowania: Java, Python, HTML5 
+Ankietowany zainteresowany jest kursem: Front-end Developer
+

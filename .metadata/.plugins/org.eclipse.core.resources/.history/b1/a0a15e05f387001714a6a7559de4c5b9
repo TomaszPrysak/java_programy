@@ -1,0 +1,51 @@
+package app.controller;
+
+import javafx.fxml.FXML;
+import javafx.scene.control.Button;
+import javafx.scene.control.PasswordField;
+import javafx.scene.control.TextField;
+import javafx.scene.input.MouseEvent;
+
+public class LoginController {
+
+    @FXML
+    private TextField tf_login;
+
+    @FXML
+    private PasswordField pf_pass;
+
+    @FXML
+    private TextField tf_pass;
+
+    @FXML
+    private Button btn_show;
+
+    @FXML
+    private Button btn_login;
+    
+    @FXML
+    void hideAction(MouseEvent event) {
+    	pf_pass.setVisible(true);
+    	tf_pass.setVisible(false);
+    	tf_pass.setText("");
+    }
+    
+    @FXML
+    void loginAction(MouseEvent event) {
+    	String login = tf_login.getText();
+    	String pass = pf_pass.getText();
+    	if(login.equals("admin") && pass.equals("admin")){
+    		
+    	}
+    }
+
+    @FXML
+    void showAction(MouseEvent event) {
+    	pf_pass.setVisible(false);
+    	tf_pass.setVisible(true);
+    	String pass = pf_pass.getText();
+    	tf_pass.setText(pass);
+    	pf_pass.setText("");
+    }
+
+}

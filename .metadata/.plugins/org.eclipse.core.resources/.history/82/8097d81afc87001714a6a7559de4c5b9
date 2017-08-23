@@ -1,0 +1,61 @@
+package app.controller;
+
+import java.awt.Frame;
+
+import javax.swing.JOptionPane;
+
+import javafx.fxml.FXML;
+import javafx.scene.control.Button;
+import javafx.scene.control.PasswordField;
+import javafx.scene.control.TextField;
+import javafx.scene.input.MouseEvent;
+
+public class LoginController {
+
+    @FXML
+    private TextField tf_login;
+
+    @FXML
+    private PasswordField pf_pass;
+
+    @FXML
+    private TextField tf_pass;
+
+    @FXML
+    private Button btn_show;
+
+    @FXML
+    private Button btn_login;
+    
+    @FXML
+    void loginAction(MouseEvent event) {
+    	
+    	Frame df = new Frame();
+    	JOptionPane op = new JOptionPane();
+    	
+    	String login = tf_login.getText();
+    	String pass = pf_pass.getText();
+    	if(login.equals("admin") && pass.equals("admin")){
+    		op.showMessageDialog(df, "Zalogowano poprawnie");
+    	}else{
+    		op.showMessageDialog(df, "Podano nieprawid³owe dane");
+    	}
+    }
+
+    @FXML
+    void showAction(MouseEvent event) {
+    	pf_pass.setVisible(false);
+    	tf_pass.setVisible(true);
+    	String pass = pf_pass.getText();
+    	tf_pass.setText(pass);
+    }
+    
+    @FXML
+    void hideAction(MouseEvent event) {
+    	pf_pass.setVisible(true);
+    	tf_pass.setVisible(false);
+    	String pass = tf_pass.getText();
+    	pf_pass.setText(pass);
+    }
+
+}
