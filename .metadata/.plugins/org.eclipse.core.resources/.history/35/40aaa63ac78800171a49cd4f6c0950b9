@@ -1,0 +1,126 @@
+package app.controller;
+
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+import app.database.DBConnector;
+import app.model.DataBaseModel;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.scene.control.Button;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
+import javafx.scene.control.TextField;
+import javafx.scene.control.cell.PropertyValueFactory;
+
+public class DataBaseController {
+	
+    @FXML
+    private TableView<DataBaseModel> TableTwo;
+
+    @FXML
+    private TableColumn<DataBaseModel, Integer> col_id;
+
+    @FXML
+    private TableColumn<DataBaseModel, String> col_name;
+
+    @FXML
+    private TableColumn<DataBaseModel, String> col_last;
+
+    @FXML
+    private TableColumn<DataBaseModel, Double> col_salary;
+	
+    @FXML
+    private Button select;
+
+    @FXML
+    private Button delete;
+
+    @FXML
+    private Button update;
+
+    @FXML
+    private Button insert;
+
+    @FXML
+    private TextField tf_name;
+
+    @FXML
+    private TextField tf_last;
+
+    @FXML
+    private TextField tf_salary;
+
+    @FXML
+    private Button btn_update;
+
+    @FXML
+    private Button btn_insert;
+    
+    public DBConnector db;
+    public ObservableList<DataBaseModel> data;
+
+    @FXML
+    void btnDeleteAction(ActionEvent event) throws ClassNotFoundException, SQLException {
+    	
+    	Connection conn = db.Connection();
+    	
+    	
+    	
+    	int id_del = TableTwo.getSelectionModel().getSelectedItem().getId();
+    	
+    	
+    	
+    }
+
+    @FXML
+    void btnInsertAction(ActionEvent event) {
+    	
+    }
+
+    @FXML
+    void btnInsertCommitAction(ActionEvent event) {
+
+    }
+
+    @FXML
+    void btnSelectAction(ActionEvent event) throws ClassNotFoundException, SQLException {
+    	
+    	Connection conn = db.Connection();
+    	data = FXCollections.observableArrayList();
+    	
+    	ResultSet rs = conn.createStatement().executeQuery("select * from employee;");
+    	
+    	while(rs.next()){
+    		data.add(new DataBaseModel(rs.getInt(1), rs.getString(2), rs.getString(3), rs.getDouble(4)));
+    	}
+    	
+    	col_id.setCellValueFactory(new PropertyValueFactory<DataBaseModel, Integer>("id"));
+    	col_name.setCellValueFactory(new PropertyValueFactory<DataBaseModel, String>("name"));
+    	col_last.setCellValueFactory(new PropertyValueFactory<DataBaseModel, String>("last"));
+    	col_salary.setCellValueFactory(new PropertyValueFactory<DataBaseModel, Double>("salary"));
+    	
+    	TableTwo.setItems(null);
+    	TableTwo.setItems(data);
+    	
+    }
+
+    @FXML
+    void btnUpdateAction(ActionEvent event) {
+
+    }
+
+    @FXML
+    void btnUpdateCommitAction(ActionEvent event) {
+
+    }
+
+    @FXML
+    public void initialize(){
+    	db = new DBConnector();
+    }
+    
+}

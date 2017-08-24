@@ -1,0 +1,94 @@
+package app.controller;
+
+import app.database.DBConnector;
+import app.model.DataBaseModel;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.scene.control.Button;
+import javafx.scene.control.TextField;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
+
+public class DataBaseController {
+	
+    @FXML
+    private TableView<DataBaseModel> TableTwo;
+
+    @FXML
+    private TableColumn<DataBaseModel, Integer> col_id;
+
+    @FXML
+    private TableColumn<DataBaseModel, String> col_name;
+
+    @FXML
+    private TableColumn<DataBaseModel, String> col_last;
+
+    @FXML
+    private TableColumn<DataBaseModel, Double> col_salary;
+	
+    @FXML
+    private Button select;
+
+    @FXML
+    private Button delete;
+
+    @FXML
+    private Button update;
+
+    @FXML
+    private Button insert;
+
+    @FXML
+    private TextField tf_name;
+
+    @FXML
+    private TextField tf_last;
+
+    @FXML
+    private TextField tf_salary;
+
+    @FXML
+    private Button btn_update;
+
+    @FXML
+    private Button btn_insert;
+    
+    public DBConnector db;
+
+    @FXML
+    void btnDeleteAction(ActionEvent event) {
+
+    }
+
+    @FXML
+    void btnInsertAction(ActionEvent event) {
+
+    }
+
+    @FXML
+    void btnInsertCommitAction(ActionEvent event) {
+
+    }
+
+    @FXML
+    void btnSelectAction(ActionEvent event) {
+    	
+    	
+    	
+    }
+
+    @FXML
+    void btnUpdateAction(ActionEvent event) {
+
+    }
+
+    @FXML
+    void btnUpdateCommitAction(ActionEvent event) {
+
+    }
+
+    public void initialize(){
+    	db = new DBConnector();
+    }
+    
+}

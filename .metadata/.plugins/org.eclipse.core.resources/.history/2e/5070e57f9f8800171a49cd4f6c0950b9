@@ -1,0 +1,14 @@
+package app.database;
+
+import java.sql.DriverManager;
+
+public class DBConnector {
+	
+	public Connection Connection() throw ClassNotFoundException, SQLException{
+	
+		Class.forName("com.mysql.jdbc.Driver");
+		
+		return DriverManagerger.getConnection("jdbc:mysql://localhost3306/logindb","root","Pitek1962mySQLF700Gs");
+		
+	}
+}

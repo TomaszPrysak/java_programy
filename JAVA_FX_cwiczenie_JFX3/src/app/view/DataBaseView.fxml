@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.controller.DataBaseController">
+   <children>
+      <Label alignment="CENTER" prefHeight="17.0" prefWidth="678.0" text="DATABASE">
+         <VBox.margin>
+            <Insets top="5.0" />
+         </VBox.margin>
+      </Label>
+      <Separator prefHeight="15.0" prefWidth="200.0">
+         <VBox.margin>
+            <Insets bottom="5.0" top="5.0" />
+         </VBox.margin>
+      </Separator>
+      <TableView fx:id="TableTwo" prefHeight="200.0" prefWidth="200.0">
+        <columns>
+          <TableColumn fx:id="col_id" prefWidth="50.0" text="ID" />
+          <TableColumn fx:id="col_name" prefWidth="150.0" text="First Name" />
+            <TableColumn fx:id="col_last" prefWidth="150.0" text="Laste Name" />
+            <TableColumn fx:id="col_salary" prefWidth="150.0" text="Gross Salary" />
+        </columns>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </TableView>
+      <Separator prefHeight="15.0" prefWidth="200.0">
+         <VBox.margin>
+            <Insets bottom="5.0" top="5.0" />
+         </VBox.margin>
+      </Separator>
+      <HBox prefHeight="25.0" prefWidth="200.0">
+         <children>
+            <Button fx:id="select" mnemonicParsing="false" onAction="#btnSelectAction" prefWidth="75.0" text="Select">
+               <HBox.margin>
+                  <Insets left="25.0" right="50.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="delete" mnemonicParsing="false" onAction="#btnDeleteAction" prefWidth="75.0" text="Delete">
+               <HBox.margin>
+                  <Insets right="50.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="update" mnemonicParsing="false" onAction="#btnUpdateAction" prefWidth="75.0" text="Update">
+               <HBox.margin>
+                  <Insets right="50.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="insert" mnemonicParsing="false" onAction="#btnInsertAction" prefWidth="75.0" text="Insert" />
+         </children>
+      </HBox>
+      <Separator prefHeight="15.0" prefWidth="200.0">
+         <VBox.margin>
+            <Insets bottom="5.0" top="5.0" />
+         </VBox.margin>
+      </Separator>
+      <GridPane fx:id="grid_panel" disable="true">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.0" minWidth="10.0" prefWidth="250.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="400.0" minWidth="10.0" prefWidth="400.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label fx:id="lb_name" alignment="CENTER_RIGHT" prefHeight="17.0" prefWidth="344.0" text="First name:">
+               <GridPane.margin>
+                  <Insets right="5.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="lb_last" alignment="CENTER_RIGHT" prefHeight="17.0" prefWidth="441.0" text="Last name:" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets right="5.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="lb_salary" alignment="CENTER_RIGHT" prefHeight="17.0" prefWidth="335.0" text="Gross Salary" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets right="5.0" />
+               </GridPane.margin>
+            </Label>
+            <TextField fx:id="tf_name" prefWidth="200.0" promptText="IMIĘ" GridPane.columnIndex="1">
+               <GridPane.margin>
+                  <Insets right="100.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="tf_last" promptText="NAZWISKO" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets right="100.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="tf_salary" promptText="NETTO" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets right="100.0" />
+               </GridPane.margin>
+            </TextField>
+         </children>
+      </GridPane>
+      <HBox prefHeight="25.0">
+         <children>
+            <Button fx:id="btn_update" disable="true" mnemonicParsing="false" onAction="#btnUpdateCommitAction" prefWidth="125.0" text="Update commit">
+               <HBox.margin>
+                  <Insets left="100.0" right="50.0" top="5.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="btn_insert" disable="true" mnemonicParsing="false" onAction="#btnInsertCommitAction" prefWidth="125.0" text="Insert commit">
+               <HBox.margin>
+                  <Insets top="5.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</VBox>
